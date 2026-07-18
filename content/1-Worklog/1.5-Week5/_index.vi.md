@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Mục tiêu tuần 5:
+- Tiếp cận và tìm hiểu tổng quan nhóm dịch vụ tính toán (Compute Services) trên nền tảng AWS.
+- Nghiên cứu lý thuyết cơ bản về máy chủ ảo (Amazon EC2) và kiến trúc phi máy chủ (AWS Lambda).
+- Đánh giá sơ bộ đặc điểm của từng dịch vụ để định hướng giải pháp triển khai phần xử lý backend sau này.
 
-### Mục tiêu tuần 5:
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày kết thúc | Tài liệu tham khảo |
+|------|----------|--------------|---------------|-------------------|
+| 1 | Đọc tài liệu tổng quan về Amazon EC2: Tìm hiểu về vòng đời của một Instance (EC2 Lifecycle), các trạng thái hoạt động và cơ chế bảo mật khóa Key Pair. | 18/05/2026 | 18/05/2026 | Tài liệu Amazon EC2 |
+| 2 | Tìm hiểu khái niệm cơ bản về Serverless (kiến trúc phi máy chủ) và cách thức hoạt động dựa trên sự kiện của dịch vụ AWS Lambda. | 19/05/2026 | 19/05/2026 | Tài liệu AWS Lambda |
+| 3 | Thực hiện bài toán phân tích so sánh lý thuyết giữa EC2 và Lambda về mặt quản lý hạ tầng, cơ chế tự động co giãn (Scaling) và cách tính chi phí. | 20/05/2026 | 20/05/2026 | AWS Compute Blog |
+| 4 | Thảo luận tổng quan với nhóm về mô hình kiến trúc web: Đánh giá xem một ứng dụng Spring Boot (như dự án Pet Resort) sẽ phù hợp với EC2 truyền thống hay Serverless Lambda hơn. | 21/05/2026 | 21/05/2026 | |
+| 5 | Hệ thống hóa lại toàn bộ kiến thức lý thuyết đã tìm hiểu trong tuần và cập nhật tiến độ báo cáo vào hệ thống Hugo local. | 22/05/2026 | 22/05/2026 | |
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Thành tích tuần 5:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+• Nắm vững các khái niệm nền tảng về hạ tầng tính toán trên mây, phân biệt được sự khác nhau giữa mô hình cấp phát máy chủ ảo (EC2) và chạy hàm Serverless (Lambda).
 
+• Hiểu rõ các kịch bản sử dụng (Use Cases) phù hợp cho từng dịch vụ để áp dụng vào các bài toán thực tế sau này.
 
-### Kết quả đạt được tuần 5:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+• Tích lũy thêm tư duy phân tích hệ thống tổng quan, chuẩn bị tốt cho giai đoạn đóng gói bản Proposal kiến trúc chính thức.

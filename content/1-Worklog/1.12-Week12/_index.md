@@ -1,57 +1,27 @@
 ---
-title: "Week 12 Worklog"
-date: 2024-01-01
-weight: 2
+title: "Worklog Week 12"
+weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 12 Objectives:
+* Complete the monitoring configuration and conduct Load Testing for the *Pet Resort & Care System* on the AWS environment.
+* Perform cost optimization (FinOps) by cleaning up unused resources and temporary testing assets.
+* Summarize the knowledge gained over the 12-week internship, finalize technical documentation, and prepare slides/scripts for the final project defense and acceptance report.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks to be implemented this week:
+| Day | Task | Start Date | End Date | References |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| Monday | - End-to-End Testing: Run smoke tests to verify purchasing flows, spa booking, payments, and connection stability from Frontend (CloudFront) to Backend (ALB). | 06/07/2026   | 06/07/2026      | Team's Test Case Scripts                  |
+| Tuesday | - Setup Monitoring & Alerting: Configure Amazon CloudWatch Dashboards and create SNS Alarms to send email alerts to Admins when EC2 CPU or RDS connections exceed 80%.                      | 07/07/2026   | 07/07/2026      | AWS Documentation (CloudWatch, SNS)       |
+| Wednesday | - Load Testing: Simulate sudden high traffic (e.g., Flash Sale) to verify the EC2 Auto Scaling mechanism and the caching efficiency of ElastiCache (Redis).                                 | 08/07/2026   | 08/07/2026      | Apache JMeter / Postman                   |
+| Thursday | - Resource Optimization (FinOps): Clean up temporary resources (test buckets, old snapshots, unattached Elastic IPs) to keep running costs under the budget limit (~$168/month).              | 09/07/2026   | 09/07/2026      | AWS Billing Console                       |
+| Friday | - Finalize Deliverables: Write the deployment README, finalize the Architecture Blueprint document, and prepare the Slide + Demo script for the final project defense.                        | 10/07/2026   | 10/07/2026      | Project Documentation                     |
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Achievements in Week 12:
 
-
-### Week 12 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Basic Project Completion:** The *Pet Resort & Care System* is now operational and fulfills the core feature requirements. During Load Testing, the Auto Scaling mechanism functioned; however, we realized the scale-out speed sometimes experiences slight delays, highlighting a need for further configuration optimization in the future.
+* **Monitoring & Cost Optimization:** Successfully set up incident alerts via CloudWatch & SNS and cleaned up unused resources. Nevertheless, our logging system is still somewhat fragmented and lacks a centralized log analysis tool (like the ELK stack).
+* **Acknowledging Shortcomings & Lessons Learned:** Looking back over the 12 weeks, I humbly recognize significant room for improvement in code optimization, fully automated CI/CD pipelines, and mitigating potential security risks. The current knowledge serves only as a foundational starting point.
+* **Internship Wrap-up:** Finalized all technical deliverables and prepared a receptive mindset for the final defense. This milestone is an essential stepping stone for diving deeper into advanced technologies like Containerization (Docker/EKS) and Microservices post-internship.

@@ -1,108 +1,77 @@
 ---
 title: "Bản đề xuất"
-date: 2024-01-01
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
+# Pet Resort & Care System  
+### Project Documentation
 
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+📄 **[Download Complete Project Proposal (Word Document)](#)**
 
-### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+---
 
-### 2. Tuyên bố vấn đề  
-*Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+### 1. Tổng Quan Hệ Thống
 
-*Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+Dự án "Pet Resort & Care System" là một sản phẩm thử nghiệm (dạng MVP - Minimum Viable Product) được phát triển trong khuôn khổ dự án tốt nghiệp. Ứng dụng là một trang web kết hợp mua bán đồ thú cưng và đặt lịch spa.
 
-*Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+Nhóm đã cố gắng áp dụng mô hình Kiến trúc 3 lớp (3-Tier Architecture) trên AWS để trải nghiệm việc triển khai ứng dụng thực tế. Dù đã thiết lập kiến trúc Multi-AZ, tự động mở rộng và các dịch vụ cơ bản của AWS, hệ thống hiện tại vẫn mang tính chất "học hỏi và thử nghiệm" là chính.
 
-### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
+---
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+### 2. Kiến trúc giải pháp & Chi Tiết Các Lớp (Mức độ thử nghiệm)
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+Dưới đây là sơ đồ kiến trúc hệ thống mà nhóm đã phác thảo và triển khai sau khi được các mentor góp ý sửa lỗi luồng (flow) để đạt chuẩn High Availability (Độ sẵn sàng cao):
 
-*Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+![Kiến trúc AWS Hệ thống Pet Resort](/images/2-Proposal/aws_architecture.jpg)
 
-*Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+#### 2.1. Lớp Biên & Phân Phối (Edge Layer)
+*   **AWS WAF & CloudFront:** Nhóm tích hợp WAF và CloudFront (CDN) để tăng tốc độ phân phối trang web tĩnh và chặn các luồng traffic độc hại. Sơ đồ sử dụng 2 Amazon S3 Bucket: một cho **Frontend** (chứa giao diện ReactJS) và một cho **Media** (chứa hình ảnh sản phẩm/thú cưng do người dùng upload).
 
-### 4. Triển khai kỹ thuật  
-*Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+#### 2.2. Lớp Mạng & Xử Lý Logic (Network & Compute Tier)
+*   **ALB & EC2 (Auto Scaling Group):** Application Load Balancer nhận luồng dữ liệu và chia tải xuống các máy chủ EC2 đặt tại các Private Subnet thuộc 2 Availability Zones (AZ) khác nhau. Auto Scaling Group giúp hệ thống tự động sinh thêm máy khi có cảnh báo quá tải.
+*   **2 NAT Gateways:** Để đảm bảo đúng chuẩn High Availability, nhóm thiết kế 2 NAT Gateway đặt ở 2 Public Subnet. Việc này giúp hệ thống không có điểm chết (Single Point of Failure), nếu 1 AZ sập thì các máy chủ backend ở AZ kia vẫn kết nối được ra Internet.
 
-*Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
+#### 2.3. Lớp Lưu Trữ Dữ Liệu (Data Tier)
+*   **Amazon ElastiCache (Redis):** Nhóm tập tành cài đặt Redis theo mô hình **Primary - Replica** để lưu Session và tối ưu tốc độ đọc dữ liệu. Dữ liệu được đồng bộ (Sync Replication) giữa 2 AZ. 
+*   **Amazon RDS (MySQL):** Hệ thống Database cũng được cấu hình **Multi-AZ (Primary - Standby)** để tự động failover khi có sự cố phần cứng từ phía AWS. Dữ liệu demo chưa nhiều nên chủ yếu setup để lấy kinh nghiệm quản trị Database trên cloud.
 
-### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
+#### 2.4. Lớp Bảo Mật & Giám Sát (Security & Monitoring)
+*   Nhóm không hardcode thông tin nhạy cảm vào code mà sử dụng **AWS Secrets Manager (SM)** và mã hóa bằng **KMS**. Quản lý quyền truy cập thông qua **IAM Role**.
+*   Sử dụng **CloudWatch** để theo dõi logs/metrics và kết hợp **Amazon SNS** để tự động gửi Email cảnh báo cho quản trị viên khi CPU máy chủ quá tải.
 
-### 6. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
-Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
+#### 2.5. Tối Ưu Chi Phí (FinOps "Nhập môn")
+*   **S3 Gateway Endpoint:** Đây là một điểm sáng trong thiết kế mà nhóm học được. Thay vì để máy chủ EC2 backend phải vòng qua NAT Gateway (tốn phí Data Transfer) để lấy ảnh/file từ S3, nhóm cấu hình S3 Gateway Endpoint giúp EC2 kết nối trực tiếp với S3 trong mạng nội bộ AWS, giúp giảm chi phí và tăng mật độ bảo mật.
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+---
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+### 3. Ước tính ngân sách (Bài toán "sống sót")
+Với việc triển khai kiến trúc Multi-AZ hoàn chỉnh (2 NAT, DB Standby, Cache Replica), nhóm phải liên tục theo dõi để không bị "cháy túi". 
 
-### 7. Đánh giá rủi ro  
-*Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+*Chi phí hạ tầng Ước tính (Monthly - Môi trường Demo)* 
+- *Amazon EC2*: ~$15.00 USD (Máy chủ `t3.micro`).
+- *Application Load Balancer*: ~$18.00 USD.
+- *2 x NAT Gateway*: ~$65.00 USD (Phí duy trì giờ chạy rất cao).
+- *Amazon RDS Multi-AZ*: ~$30.00 USD (`db.t3.micro`).
+- *Amazon ElastiCache Multi-AZ*: ~$25.00 USD (`cache.t2.micro`).
+- *Các dịch vụ khác (WAF, S3, CloudFront, Secrets Manager, SNS...)*: ~$15.00 USD.
 
-*Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
+*Tổng ngân sách*: **~$168.00 USD/tháng**. 
+Dù đã cố gắng dùng các gói Free Tier và máy chủ cấu hình thấp nhất, đây vẫn là mức phí khá "đau ví" với sinh viên. Nhóm dự định ngay sau khi báo cáo nghiệm thu xong sẽ xóa bớt RDS Multi-AZ và NAT Gateway để tránh phát sinh hóa đơn.
 
-*Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
+---
 
-### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+### 4. Đánh giá rủi ro (Rất thực tế)
+*   **Auto Scaling phản ứng chậm (Khả năng cao):** Nếu thầy cô hoặc hội đồng test spam request quá nhanh, EC2 sẽ quá tải trước khi Auto Scaling kịp sinh ra máy mới.
+*   **Lỗi code Backend (Khả năng trung bình):** Logic xử lý đặt lịch spa (booking) thỉnh thoảng vẫn bị lỗi double-booking do xử lý khóa (lock) trong Database chưa thực sự triệt để.
+*   **Vượt ngân sách (Khả năng cao):** Do sử dụng 2 NAT Gateway, nếu code bị lỗi loop request ra Internet, chi phí Data Transfer có thể tăng vọt trong thời gian ngắn.
+
+---
+
+### 5. Kết quả kỳ vọng & Bài học rút ra
+*   **Sản phẩm:** Một trang web "chạy được", các luồng cơ bản (mua hàng, đặt lịch) có thể thao tác từ đầu đến cuối mà không văng lỗi 500.
+*   **Kỹ năng đạt được:** 
+    *   Hết "mù mờ" về Cloud: Nhóm đã tự tay cấu hình VPC, Subnet, Endpoint, Load Balancer thay vì chỉ học lý thuyết.
+    *   Nếm mùi "đau thương": Hiểu được việc debug code chạy trên Local rất dễ, nhưng khi vứt lên Cloud (EC2) mà giấu sau Private Subnet thì tìm lỗi qua CloudWatch Logs khó khăn như thế nào.
+    *   Kiến trúc này là bước đệm cực kỳ giá trị để nhóm định hình được một hệ thống thực tế cần những mảnh ghép gì để có thể tồn tại trên Internet.

@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Mục tiêu tuần 1:
+- Gặp mặt, làm quen với các Mentor của FCJ và các thành viên trong nhóm thực tập.
+- Tiếp cận các khái niệm cơ bản về điện toán đám mây, hoàn thành thiết lập tài khoản và môi trường báo cáo.
 
-### Mục tiêu tuần 1:
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày kết thúc | Tài liệu tham khảo |
+|------|----------|--------------|---------------|-------------------|
+| 1 | Đọc kỹ nội dung quy trình, quy định thực tập và xem các video tổng quan giới thiệu về hệ sinh thái AWS. | 17/04/2026 | 17/04/2026 | |
+| 2 | Nghiên cứu nội dung Module 01:<br>- Tìm hiểu định nghĩa về Cloud Computing.<br>- Các mô hình triển khai đám mây và lợi ích cốt lõi. | 18/04/2026 | 18/04/2026 | |
+| 3 | - Đăng ký thành công tài khoản AWS Free Tier.<br>- Thực hành bảo mật tài khoản cơ bản ở Module 01:<br>+ Tạo IAM Admin Group và cấu hình Admin User.<br>- Tìm hiểu công cụ Draw.io để chuẩn bị vẽ sơ đồ kiến trúc sau này. | 20/04/2026 | 20/04/2026 | |
+| 4 | Tìm hiểu và cài đặt framework Hugo Static Site Generator trên máy local, học cách quản lý thư mục cấu trúc bài viết. | 21/04/2026 | 21/04/2026 | |
+| 5 | Học lý thuyết nền tảng về dịch vụ máy chủ ảo Amazon EC2 (khái niệm Instance, loại máy chủ, Security Group). | 22/04/2026 | 22/04/2026 | |
+| 6 | Thao tác trên AWS Console với 5 bài lab cơ bản để quen giao diện điều khiển và tìm hiểu cơ chế nạp credit Free Tier. | 23/04/2026 | 23/04/2026 | |
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Thành tích tuần 1:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+• Bước đầu hình thành tư duy tổng quan về hạ tầng Cloud và phân biệt được các nhóm dịch vụ cơ bản (Tính toán, Lưu trữ, Mạng, Cơ sở dữ liệu).
 
+• Thiết lập thành công phân quyền bảo mật IAM (không dùng quyền Root cho các tác vụ thông thường) trên tài khoản AWS mới.
 
-### Kết quả đạt được tuần 1:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+• Cấu hình chạy thử nghiệm thành công giao diện Hugo local để chuẩn bị cho việc xây dựng workshop cá nhân.

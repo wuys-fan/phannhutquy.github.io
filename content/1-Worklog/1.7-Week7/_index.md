@@ -1,57 +1,43 @@
 ---
-title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 7"
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
+* Integrate the ReactJS frontend layout with Spring Boot Backend RESTful APIs.
+* Deploy a complete user authentication and authorization workflow utilizing JWT bearer tokens.
+* Conduct integration testing for core Pet Shop operational modules (Shopping Cart, Pet Spa Booking, Order Creation).
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+### Tasks carried out this week:
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 1 | - Connect React frontend rendering components with Spring Boot APIs via the managed layer `services/api.js`.<br>- Configure Axios base URL properties to point precisely to the backend server endpoint location. | 01/06/2026 | 01/06/2026 | Axios & Spring Boot API Docs |
+| 2 | - Construct full user Login/Registration workflows on the `LoginPage` and `RegisterPage` interfaces.<br>- Integrate backend JWT token handlers (`JwtResponse`, `JwtTokenProvider`) from `AuthController` into frontend `authStore.js` to manage active sessions and encapsulate controlled routes (`ProtectedRoute`, `AdminRoute`). | 02/06/2026 | 02/06/2026 | Spring Security & React Context |
+| 3 | - Bind item catalog components (`ProductsPage`, `ProductCard`) with dynamic data arrays served by `ProductController`.<br>- Deploy frontend state logic for the `CartPage` via `cartStore.js`, syncing cart status synchronously with the backend `CartController`. | 03/06/2026 | 03/06/2026 | React State Management |
+| 4 | - Develop processing workflows for checkout operations (`CheckoutPage`) and pet care appointment scheduling (`BookingPage`).<br>- Map communication pipelines from the user interface down to functional backend controllers including `OrderController` and `BookingController`. | 04/06/2026 | 04/06/2026 | Spring Boot Controller Mapping |
+| 5 | - Perform comprehensive End-to-End testing across the global user lifecycle: Registration -> Login -> Cart operations -> Grooming booking (`SpaServiceController`) -> Invoice finalization.<br>- Optimize the backend `CorsConfig` file on Spring Boot to thoroughly handle cross-origin resource sharing (CORS) blocks between the two environments. | 05/06/2026 | 05/06/2026 | Integration Testing Guide |
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Successful Multi-tier Architecture Integration:**
+  * Established seamless communication between the ReactJS client application and Spring Boot RESTful APIs through a centralized `services/api.js` communication layer.
+  * Configured unified system error handling to feed precise visual feedback back to end-users whenever an API request failure occurs.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Completed Authentication & Authorization Hardening:**
+  * New users can now register accounts smoothly, with password hashing utilities automatically executing before persistent storage in the database.
+  * Login/Logout mechanisms function stably; JWT tokens are securely parsed and attached to every outbound request header via the backend `JwtAuthenticationFilter` execution chain.
+  * Strictly enforced admin-level route guarding: management dashboard interfaces (`AdminBookingsPage`, `AdminProductsPage`, `DashboardPage`) are fully isolated via frontend `AdminRoute` definitions, completely mitigating unauthorized standard user access.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* **Actualized Core Business Logic for the Pet Shop System:**
+  * **Dynamic Catalog Rendering:** Merchandise profiles and pet care service catalogs load dynamically via the `ProductController` and `SpaServiceController` pipelines.
+  * **Cart Ecosystem (`cartStore.js`):** Enabled item additions, absolute removals, quantity adjustments, and automated order subtotal calculations.
+  * **Orders & Bookings Processing:** Finished data-binding routines to log persistent transactional schemas into order registries (`OrderController`) and reservation logs (`BookingController`).
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* **Verified End-to-End User Journey Operations:**
+  * Validated the standard user operation lifecycle: new account registration -> account login -> exploring available Spa services -> appending dry food supplies to cart -> completing appointment booking and generating invoicing logs.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Enhanced UX Feedback Loops & Conflict Refinement:**
+  * Mitigated native cross-origin resource conflicts by optimizing cross-origin request mappings inside the backend Spring Boot `CorsConfig` repository.
+  * Implemented systemic loading state visual elements onto client layouts to refine user interface responsiveness during remote server calls.

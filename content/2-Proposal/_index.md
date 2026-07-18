@@ -1,115 +1,77 @@
 ---
-title: "Proposal"
-date: 2024-01-01
+title: "Project Proposal"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
+# Pet Resort & Care System  
+### Project Documentation
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+📄 **[Download Complete Project Proposal (Word Document)](#)**
 
-### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+---
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+### 1. System Overview
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+The "Pet Resort & Care System" is a Minimum Viable Product (MVP) developed as part of a graduation project. The application is a web platform combining pet product e-commerce and a basic spa booking system.
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+Our team has applied the 3-Tier Architecture model on AWS to gain hands-on experience in real-world application deployment. Although we have established a Multi-AZ architecture, auto-scaling, and foundational AWS services, the current system is primarily intended for "learning and experimental" purposes.
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+---
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+### 2. Solution Architecture & Layer Details (Experimental Level)
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+Below is the system architecture diagram that our team sketched and deployed after receiving mentor feedback to fix the traffic flow and achieve High Availability standards:
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+![AWS Architecture Pet Resort System](/images/2-Proposal/aws_architecture.jpg)
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+#### 2.1. Edge & Delivery Layer
+*   **AWS WAF & CloudFront:** We integrated WAF and CloudFront (CDN) to accelerate static content delivery and block malicious traffic. The architecture utilizes two Amazon S3 Buckets: one for the **Frontend** (hosting the ReactJS UI) and one for **Media** (storing product/pet images uploaded by users).
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+#### 2.2. Network & Compute Tier
+*   **ALB & EC2 (Auto Scaling Group):** An Application Load Balancer receives incoming traffic and distributes it across EC2 instances located in Private Subnets across two different Availability Zones (AZs). The Auto Scaling Group ensures the system automatically provisions additional instances when overload alerts are triggered.
+*   **2 NAT Gateways:** To meet High Availability standards, we deployed two NAT Gateways in two Public Subnets. This eliminates any Single Point of Failure; if one AZ goes down, the backend servers in the other AZ can still connect to the Internet.
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+#### 2.3. Data Tier
+*   **Amazon ElastiCache (Redis):** We configured Redis in a **Primary - Replica** setup to store Sessions and optimize data read speeds. Data is synchronized (Sync Replication) between the two AZs.
+*   **Amazon RDS (MySQL):** The database system is also configured for **Multi-AZ (Primary - Standby)** to enable automatic failover in case of AWS hardware issues. Since the demo data is small, this setup is primarily to gain cloud database administration experience.
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+#### 2.4. Security & Monitoring Layer
+*   We avoided hardcoding sensitive information by utilizing **AWS Secrets Manager (SM)** and encrypting data with **KMS**. Access control is managed strictly via **IAM Roles**.
+*   We use **CloudWatch** to monitor logs and metrics, integrated with **Amazon SNS** to automatically send Email alerts to administrators when server CPU usage is critically high.
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+#### 2.5. Cost Optimization (Introductory FinOps)
+*   **S3 Gateway Endpoint:** This is a major highlight in our design. Instead of routing backend EC2 traffic through the NAT Gateway to fetch images/files from S3 (which incurs high Data Transfer costs), we configured an S3 Gateway Endpoint. This allows EC2 to connect directly to S3 within the AWS internal network, reducing costs and enhancing security.
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+---
 
-Total: $0.7/month, $8.40/12 months
+### 3. Budget Estimation (The "Survival" Math)
+With the deployment of a fully-fledged Multi-AZ architecture (2 NATs, DB Standby, Cache Replica), the team must monitor usage constantly to avoid going broke.
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+*Estimated Infrastructure Cost (Monthly - Demo Environment)* 
+- *Amazon EC2*: ~$15.00 USD (`t3.micro` instances).
+- *Application Load Balancer*: ~$18.00 USD.
+- *2 x NAT Gateways*: ~$65.00 USD (Hourly uptime charges are very high).
+- *Amazon RDS Multi-AZ*: ~$30.00 USD (`db.t3.micro`).
+- *Amazon ElastiCache Multi-AZ*: ~$25.00 USD (`cache.t2.micro`).
+- *Other services (WAF, S3, CloudFront, Secrets Manager, SNS...)*: ~$15.00 USD.
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+*Total Budget*: **~$168.00 USD/month**. 
+Despite our best efforts to leverage Free Tier and the lowest instance configurations, this is still a "painful" expense for students. The team plans to tear down the RDS Multi-AZ and NAT Gateways immediately after the project defense to prevent further billing.
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+---
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+### 4. Risk Assessment (Highly Realistic)
+*   **Slow Auto Scaling Response (High Probability):** If instructors or the defense panel spam requests too quickly, the EC2 instances might overload before the Auto Scaling Group has enough time to spin up new servers.
+*   **Backend Code Bugs (Medium Probability):** The spa booking logic occasionally experiences double-booking issues because the database locking mechanism hasn't been perfectly optimized.
+*   **Budget Overrun (High Probability):** Due to the use of 2 NAT Gateways, if a code bug causes an infinite loop of external Internet requests, Data Transfer costs could spike rapidly.
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+---
+
+### 5. Expected Outcomes & Lessons Learned
+*   **The Product:** A "functional" website where basic flows (purchasing, booking) can be completed end-to-end without throwing 500 errors.
+*   **Skills Acquired:** 
+    *   No longer "cloud-blind": The team manually configured the VPC, Subnets, Endpoints, and Load Balancers instead of just learning the theory.
+    *   Tasting the "pain": We realized that while debugging code locally is easy, finding bugs via CloudWatch Logs when the app is running on an EC2 instance hidden behind a Private Subnet is incredibly challenging.
+    *   This architecture serves as an invaluable stepping stone, helping the team visualize exactly what puzzle pieces are required for a real-world system to survive on the Internet.

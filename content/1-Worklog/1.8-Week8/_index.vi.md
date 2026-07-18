@@ -1,59 +1,34 @@
 ---
 title: "Worklog Tuần 8"
-date: 2024-01-01
-weight: 1
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 8:
+* Hoàn tất việc đóng gói mã nguồn Spring Boot của dự án Pet Resort & Care thành tệp thực thi độc lập (.jar) ngay trên máy cá nhân.
+* Nghiên cứu và so sánh các giải pháp triển khai Backend: PaaS (AWS Elastic Beanstalk) vs IaaS (Amazon EC2).
+* Sau khi được mentor tư vấn, chuyển hướng sang triển khai trực tiếp trên Amazon EC2 để tích lũy kinh nghiệm thực chiến sâu hơn.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Nhiệm vụ thực hiện trong tuần:
+| Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày kết thúc | Tài liệu tham khảo |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 1 | - Tạm dừng việc code tính năng mới, bắt đầu tìm hiểu quy trình Build và Đóng gói một ứng dụng Spring Boot.<br>- Đọc tài liệu về Maven Lifecycle (Clean, Compile, Package). | 08/06/2026 | 08/06/2026 | Tài liệu Spring Boot Maven |
+| 2 | - Thực hành chạy lệnh `mvn clean package` trên Terminal của VS Code / IntelliJ để đóng gói dự án Backend Pet Shop thành file `.jar`.<br>- Xử lý các lỗi lặt vặt liên quan đến Test Cases khi build file. | 09/06/2026 | 09/06/2026 | StackOverflow / Blog Java |
+| 3 | - Tắt công cụ lập trình (IDE), mở Command Prompt của Windows và thử chạy file `.jar` vừa build bằng lệnh `java -jar petshop-backend.jar`.<br>- Kiểm tra lại các API trên Postman để chắc chắn file chạy độc lập tốt. | 10/06/2026 | 10/06/2026 | Java Documentation |
+| 4 | - Tìm hiểu sơ bộ **AWS Elastic Beanstalk** (PaaS) — giải pháp tự động hóa giúp tải file `.jar` lên qua giao diện Web mà không cần gõ lệnh Linux.<br>- So sánh lợi ích/hạn chế giữa Beanstalk (dễ nhưng ít kiểm soát) và EC2 (khó hơn nhưng học được nhiều). | 11/06/2026 | 11/06/2026 | AWS Elastic Beanstalk Guide |
+| 5 | - Sau khi tham vấn ý kiến mentor, nhóm quyết định triển khai trực tiếp trên **Amazon EC2** thay vì dùng Beanstalk. Lý do: Tự tay cấu hình máy chủ Linux, Security Group và Load Balancer mang lại giá trị học tập lớn hơn nhiều cho mục tiêu thực tập. | 12/06/2026 | 12/06/2026 | Tài liệu Amazon EC2 Linux |
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Hoàn thiện kỹ năng đóng gói ứng dụng Local (Application Packaging):**
+  * Hiểu được sự khác biệt giữa việc chạy code trực tiếp trên công cụ lập trình (IDE) và chạy ứng dụng đã được biên dịch độc lập.
+  * Sử dụng thành công Maven để đóng gói dự án Spring Boot thành một tệp thực thi `.jar` hoàn chỉnh.
+  * Đảm bảo ứng dụng backend chạy ổn định trên môi trường Windows local thông qua lệnh `java -jar`, kết nối thành công với cơ sở dữ liệu.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* **Hình thành tư duy lựa chọn dịch vụ đám mây (Cloud Service Selection):**
+  * Nắm được sự khác biệt giữa mô hình IaaS (Amazon EC2) và PaaS (AWS Elastic Beanstalk).
+  * Đánh giá đúng: Beanstalk dễ dùng nhưng che giấu chi tiết hạ tầng; EC2 đòi hỏi nhiều công sức hơn nhưng tối đa hóa bài học thực chiến.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Xác định rõ lộ trình triển khai cho các tuần tiếp theo:**
+  * Theo lời khuyên từ mentor, nhóm quyết định triển khai trực tiếp trên **Amazon EC2** cho dự án Pet Resort & Care. Dù con đường này đòi hỏi kỹ năng dòng lệnh Linux và cấu hình hạ tầng thủ công, đây là cơ hội học tập giá trị hơn nhiều, phù hợp với mục tiêu giáo dục của chương trình thực tập.

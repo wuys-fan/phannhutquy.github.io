@@ -1,57 +1,39 @@
 ---
-title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 6"
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 6 Objectives:
+* Attend the office for self-study sessions and group discussions to resolve outstanding cloud infrastructure queries.
+* Review, audit, and systematize knowledge regarding the core service groups covered (IAM, S3, VPC, EC2).
+* Investigate theoretical static hosting solutions and draft the preliminary architecture diagram for the Pet Resort & Care project.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+### Tasks carried out this week:
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 1 | Attend the office for self-study; audit and review all AWS account security configurations (Root Account & IAM Users), and optimize Password Policies. | 25/05/2026 | 25/05/2026 | AWS IAM Documentation |
+| 2 | Conduct a deep-dive review into Amazon S3 storage services; practice advanced security setups including S3 Block Public Access and Object Ownership. | 26/05/2026 | 26/05/2026 | Amazon S3 Guide |
+| 3 | Participate in office group discussions; re-examine VPC subnetting theories, inbound/outbound traffic flows through Public/Private Subnets, and Security Groups configurations. | 27/05/2026 | 27/05/2026 | Amazon VPC Documentation |
+| 4 | Study theoretical implementations for distributing static frontends; explore how to combine Amazon S3 with Amazon CloudFront (CDN) to optimize page loading speeds. | 28/05/2026 | 28/05/2026 | AWS Web Hosting Blog |
+| 5 | Practice drafting the preliminary system architecture for the Pet Resort & Care project using Draw.io; compile documentation for the upcoming Proposal week. | 29/05/2026 | 29/05/2026 | |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Comprehensive Core Knowledge Systematization:** Mastered the operational mechanics of core AWS service branches (Compute, Networking, Storage, Security) mid-internship, ensuring a solid foundation before major deployment phases.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Optimized Internship Account Security:**
+  * Verified successful Multi-Factor Authentication (MFA) activation for both Root and IAM User accounts.
+  * Implemented the Principle of Least Privilege across member IAM Users to enforce strict resource governance.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* **Proficiency in AWS CLI Core Operations for Resource Auditing:**
+  * `aws sts get-caller-identity`: Verified and authenticated the current active IAM User identity.
+  * `aws s3 ls`: Listed running storage cluster repositories (S3 Buckets) within the environment.
+  * Practiced command-line asset bucket provisioning and termination sequences to adapt to terminal-based resource management.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* **Refined Secure Network Architecture Design Thinking:** Understood how to position an Application Load Balancer (ALB) in Public Subnets to face internet entry points while shielding core resources (EC2 Spring Boot Backend, RDS MySQL) inside Private Subnets away from public exposure.
 
-* Used AWS CLI to perform basic operations such as:
+* **Completed the Draft Architecture Diagram:** Formulated a distinct roadmap for the Pet Shop layout, tracing user requests from Route 53, fetching static UI components from CloudFront/S3 Frontend, up to API routing towards the backend layer.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Enhanced Independent Study and Peer Collaboration:** Resolved remaining hands-on lab blocks through direct interaction and knowledge sharing with team members during office hours.

@@ -1,57 +1,49 @@
 ---
-title: "Week 11 Worklog"
-date: 2024-01-01
-weight: 2
+title: "Worklog Week 11"
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 11 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Receive feedback from Admins/Mentors to revise, optimize, and finalize the final AWS architecture diagram.
+* Deploy the entire Pet Resort & Care System project (both Frontend and Backend) to the actual Cloud environment based on the finalized architecture.
+* Ensure the system operates stably on the 3-Tier architecture, meeting High Availability (Multi-AZ) and closed security requirements.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be implemented this week:
+| Day | Task | Start Date | End Date | References |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| Monday | - Receive feedback from admin: Fix the CloudFront flow for distributing Frontend and Media content to avoid flow errors; redraw connection lines for visual clarity.<br>- Finalize the AWS architecture blueprint. | 29/06/2026   | 29/06/2026      | Feedback from AWS Study Group Admin       |
+| Tuesday | - Deploy Network & Security Layer: Initialize VPC, Public/Private Subnets (Multi-AZ), NAT Gateway.<br>- Set up Security Groups, IAM Roles, KMS, and Secrets Manager.                            | 30/06/2026   | 30/06/2026      | AWS Documentation (VPC, IAM, KMS)         |
+| Wednesday | - Deploy Data Tier: Install Amazon RDS MySQL (Multi-AZ, Sync Replication) and Amazon ElastiCache (Redis) using the Cache-Aside model.                                         | 01/07/2026   | 01/07/2026      | AWS Documentation (RDS, ElastiCache)      |
+| Thursday | - Deploy Compute Tier: Push Spring Boot Backend source code to EC2.<br>- Configure Auto Scaling Group and manage traffic with Application Load Balancer (ALB).            | 02/07/2026   | 03/07/2026      | AWS Documentation (EC2, ALB, Auto Scaling)|
+| Saturday | - Deploy Edge Layer: Upload ReactJS static source code to S3 Frontend, create S3 Media.<br>- Configure CloudFront to route requests and attach AWS WAF to protect the system.        | 04/07/2026   | 04/07/2026      | AWS Documentation (CloudFront, S3, WAF)   |
 
+### Achievements in Week 11:
 
-### Week 11 Achievements:
+#### A. Architecture Finalization
+* Successfully fixed logic errors in the Data Flow design based on Admin's feedback: Clearly separated the role of CloudFront combined with S3 for the static Frontend, and the direct Media resource retrieval flow.
+* Finalized a professional 3-Tier architecture diagram, fully prepared for the final project reporting and acceptance phase.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### B. Cloud Deployment
+* Successfully migrated the entire *Pet Resort & Care System* from the Local environment to the actual AWS infrastructure.
+* The system is now accessible smoothly via the Internet using a custom domain. API calls from Frontend to Backend, as well as image/media retrieval flows, operate seamlessly through the global CDN.
+* Successfully applied Zero Trust security principles: Completely disabled SSH port (Port 22), isolated the Database within the Private Subnet, and securely managed credentials using AWS Secrets Manager.
 
-* Successfully created and configured an AWS Free Tier account.
+#### C. Deployment Evidence
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* **VPC Resource Map:** Visualizing the subnet structure, route tables, and gateways for the Multi-AZ setup.
+  ![VPC Resource Map](/images/1-Worklog/vpc_resource_map.png)
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* **Security Groups:** Structured firewall rules configured for ALB, Backend, Database, and Cache.
+  ![Security Groups](/images/1-Worklog/security_groups.png)
 
-* Used AWS CLI to perform basic operations such as:
+* **RDS Database Initialization & Pricing:** Database estimated monthly cost details during RDS MySQL configuration.
+  ![RDS Database Estimated Costs](/images/1-Worklog/rds_estimated_costs.png)
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* **RDS MySQL Instance Launch:** The `petshop-database-1` instance in `Creating` status.
+  ![RDS Instance Launching](/images/1-Worklog/rds_creating.png)
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **RDS Connectivity & Details:** Database specifications showing its private endpoint and Multi-AZ ready placement.
+  ![RDS Connectivity Details](/images/1-Worklog/rds_connectivity.png)

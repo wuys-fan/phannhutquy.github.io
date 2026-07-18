@@ -1,58 +1,27 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Mục tiêu tuần 6:
+- Lên văn phòng tham gia các buổi tự học, trao đổi trực tiếp với các thành viên để giải quyết các thắc mắc về hạ tầng đám mây.
+- Ôn tập và củng cố lại các kiến thức cốt lõi đã học trong các tuần qua (IAM, S3, VPC, EC2).
+- Nghiên cứu lý thuyết về phương pháp tối ưu hóa việc lưu trữ và phân phối giao diện tĩnh (Static Website Hosting).
 
-### Mục tiêu tuần 6:
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày kết thúc | Tài liệu tham khảo |
+|------|----------|--------------|---------------|-------------------|
+| 1 | Lên văn phòng tự học, hệ thống hóa lại các thiết lập bảo mật tài khoản; kiểm tra cấu hình MFA và các chính sách phân quyền IAM User đã tạo. | 25/05/2026 | 25/05/2026 | AWS IAM Documentation |
+| 2 | Ôn tập chuyên sâu về dịch vụ lưu trữ Amazon S3, làm rõ cơ chế quản lý vòng đời đối tượng (Lifecycle Policies) và bảo mật Bucket. | 26/05/2026 | 26/05/2026 | Amazon S3 Guide |
+| 3 | Thảo luận nhóm tại văn phòng về mô hình VPC; rà soát lại lý thuyết phân chia Subnet và cách thức hoạt động của các quy tắc tường lửa (Security Groups). | 27/05/2026 | 27/05/2026 | |
+| 4 | Tìm hiểu các giải pháp phân phối giao diện Frontend tĩnh: Đọc tài liệu so sánh giữa việc dùng Amazon S3 Static Hosting thông thường và tích hợp AWS Amplify. | 28/05/2026 | 28/05/2026 | AWS Web Hosting Blog |
+| 5 | Tổng hợp các nội dung tự học trong tuần, chuẩn bị các câu hỏi kỹ thuật cần Mentor hỗ trợ và cập nhật tiến độ báo cáo local. | 29/05/2026 | 29/05/2026 | |
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Thành tích tuần 6:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+• Hoàn thành việc hệ thống hóa và nắm vững toàn bộ kiến thức nền tảng về nhóm dịch vụ Core (Tính toán, Mạng, Lưu trữ, Bảo mật) của AWS.
 
+• Làm rõ được định hướng triển khai phần giao diện (Frontend ReactJS): Quyết định nghiên cứu sâu giải pháp lưu trữ tĩnh trên Amazon S3 kết hợp CDN để tối ưu chi phí thay vì lạm dụng các dịch vụ tự động hóa đắt đỏ.
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+• Tăng cường khả năng làm việc độc lập thông qua chuỗi ngày tự học tại văn phòng và phối hợp nhịp nhàng với tiến độ chung của nhóm.

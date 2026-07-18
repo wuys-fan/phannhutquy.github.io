@@ -1,57 +1,38 @@
 ---
-title: "Week 10 Worklog"
-date: 2024-01-01
-weight: 2
+title: "Worklog Week 10"
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 10 Objectives:
+* Focus on analyzing, drafting, and refining the System Architecture Diagram for the Pet Resort & Care project.
+* Research and reference architecture evaluation threads and admin comments within the AWS Study Group community to optimize the design.
+* Review all data transit vectors on the blueprint, ensuring alignment with the simplified infrastructure directions studied in Weeks 8 and 9.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+### Tasks carried out this week:
+| Day | Detailed Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 1 | - Analyze the physical directory boundaries of the local source code to map functional tiers (ReactJS Frontend, Spring Boot Backend, MySQL Database).<br>- Sketch the initial blueprint on Draw.io. | 22/06/2026 | 22/06/2026 | System Block Diagram |
+| 2 | - Attend the office and browse the AWS Study Group community platforms to evaluate infrastructure blueprints from prior cohorts.<br>- Compile common architectural design pitfalls based on Admin review comments. | 23/06/2026 | 23/06/2026 | AWS Study Group Community |
+| 3 | - Cross-reference the team's blueprint with the actual codebase; inspect if connection flows are over-engineered or include unutilized services.<br>- Verify the technical logic of API routing arrows. | 24/06/2026 | 24/06/2026 | |
+| 4 | - Execute structural updates to the diagram: explicitly isolate the Amazon VPC boundaries, server placement across multiple Availability Zones, and managed RDS MySQL layers to align with the High Availability architecture direction. | 25/06/2026 | 25/06/2026 | AWS Architecture Icon Set |
+| 5 | - Finalize the formal high-level group system architecture blueprint.<br>- Author brief functional logs detailing data interaction paths, review the complete registry layout, and push updates to Hugo. | 26/06/2026 | 26/06/2026 | |
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### A. System Architecture Diagram Refinement & Blueprinting
+* **Standardized Real-World Data Distribution Flows:**
+  * Successfully visualized the application baseline flow: End-users querying domains via Route 53 -> fetching static client structures from S3/CloudFront repositories -> issuing RESTful API commands down to compute server hosts.
+  * Distinctly separated network security boundaries (Network Isolation): positioning public entry nodes inside Public Subnets while encapsulating the active backend codebase and managed RDS MySQL layer deep inside Private Subnets.
+* **Mitigated Systemic Logical Errors:**
+  * Evaporated redundant or over-complicated architectural blocks (such as automated serverless Lambda functions or DynamoDB NoSQL nodes from the template) that do not match the team's native Spring Boot layout, avoiding potential questioning from project auditors.
 
-* Successfully created and configured an AWS Free Tier account.
+#### B. Knowledge Synthesis from Expert Community Feedback
+* **Studied Real-World Infrastructure Assessments:**
+  * Extensively reviewed active troubleshooting notes and comment feedbacks shared by AWS Study Group Admins on parallel infrastructure designs to refine our own layout.
+  * Mastered identification of critical charting flaws: inverted data flow vectors, exposing relational database targets to Public Subnets, or misconfiguring Security Groups firewall routing rules.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+#### C. Operational Code and Cloud Infrastructure Alignment
+* Ensured structural compliance between theoretical cloud network layouts and the project's current local code repository.
+* Upheld a highly realistic and minimal design philosophy, focusing strictly on populating pet media/invoice storage via S3 and securing stable execution environments for Spring Boot, allowing the team to retain absolute control over the platform footprint without knowledge overload.

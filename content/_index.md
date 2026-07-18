@@ -1,34 +1,23 @@
 ---
-title: "Internship Report"
-date: 2024-01-01
+title: "Nguyen Hoang Son - Internship Report"
 weight: 1
 chapter: false
 ---
 
-    
-# Internship Report
-
+# Nguyen Hoang Son Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Phan Nhựt Quý
-
-&emsp; **Phone Number:** 0833664458
-
-&emsp; **Email:** quyp060@gmail.com
-
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
-
+&emsp; **Full Name:** Nguyễn Hoàng Sơn
+&emsp; **Phone Number:** 0961346562
+&emsp; **Email:** nguyenhson692@gmail.com
+&emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
 &emsp; **Major:** Information Technology
-
-&emsp; **Class:** 22DTHB1
-
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
-
+&emsp; **Student ID:** 2280602754
+&emsp; **Internship Company:** Amazon Web Services Vietnam LLC.
 &emsp; **Internship Position:** FCJ Cloud Intern
+&emsp; **Internship Period:** From April 17, 2026 to July 20, 2026
 
-&emsp; **Internship Duration:** From 17/04/2026 to 17/07/2026
-
-![Your profile picture](/images/avatar.png)
+![Profile Picture](/images/HoangSOn.jpg)
 
 ### Report Content
 

@@ -1,59 +1,38 @@
 ---
 title: "Worklog Tuần 10"
-date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 10:
+* Tập trung phân tích, phác thảo và hiệu chỉnh sơ đồ kiến trúc hệ thống (Architecture Diagram) cho dự án Pet Resort & Care.
+* Nghiên cứu và tham khảo các bài viết, nhận xét (Comments) của các Admin trên cộng đồng AWS Study Group để tối ưu hóa thiết kế.
+* Rà soát toàn bộ luồng đi của dữ liệu trên sơ đồ, đảm bảo tính nhất quán với định hướng hạ tầng đơn giản đã nghiên cứu ở Tuần 8 và Tuần 9.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Nhiệm vụ thực hiện trong tuần:
+| Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày kết thúc | Tài liệu tham khảo |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 1 | - Phân tích cấu trúc thư mục mã nguồn thực tế của dự án để phác thảo các phân lớp chức năng (Frontend ReactJS, Backend Spring Boot, Database MySQL).<br>- Vẽ bản nháp đầu tiên của sơ đồ trên Draw.io. | 22/06/2026 | 22/06/2026 | Sơ đồ khối hệ thống |
+| 2 | - Lên văn phòng và truy cập cộng đồng AWS Study Group để đọc các bài đánh giá kiến trúc của các khóa trước.<br>- Tổng hợp các lỗi thiết kế hệ thống thường gặp thông qua các comment review của Admin. | 23/06/2026 | 23/06/2026 | Cộng đồng AWS Study Group |
+| 3 | - Đối chiếu sơ đồ kiến trúc của nhóm với phần mã nguồn thực tế; rà soát xem luồng kết nối có bị quá sức hoặc xuất hiện các dịch vụ không có trong code hay không.<br>- Kiểm tra tính logic của các mũi tên chỉ luồng API. | 24/06/2026 | 24/06/2026 | |
+| 4 | - Thực hiện chỉnh sửa, tối ưu hóa sơ đồ: Phân tách rõ ràng phân vùng mạng ảo VPC, vị trí đặt máy chủ trên nhiều Vùng sẵn sàng (Availability Zones) và cơ sở dữ liệu RDS MySQL nhằm bám sát định hướng kiến trúc High Availability. | 25/06/2026 | 25/06/2026 | AWS Architecture Icon Set |
+| 5 | - Hoàn thiện bản vẽ kiến trúc tổng quan (Architecture Blueprint) cấp độ nhóm.<br>- Viết tài liệu mô tả ngắn gọn luồng tương tác giữa các thành viên, rà soát lại toàn bộ hệ thống và cập nhật tiến độ tuần lên Hugo. | 26/06/2026 | 26/06/2026 | |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### A. Nghiên cứu và tối ưu hóa sơ đồ kiến trúc hệ thống (Architecture Blueprinting)
+* **Chuẩn hóa luồng phân phối dữ liệu thực tế:**
+  * Trực quan hóa thành công luồng đi của ứng dụng: Người dùng truy cập tên miền qua Route 53 -> Tải giao diện tĩnh từ phân vùng lưu trữ S3/CloudFront -> Gọi các RESTful API xuống tầng xử lý máy chủ.
+  * Phân tách rõ ràng ranh giới bảo mật mạng (Network Isolation): Đặt các cổng tiếp nhận lưu lượng công cộng ở Public Subnet và cô lập hoàn toàn tầng xử lý mã nguồn backend cùng cơ sở dữ liệu RDS MySQL trong Private Subnet.
+* **Đối chiếu và sửa đổi lỗi logic hệ thống:**
+  * Loại bỏ các thành phần kiến trúc bị vẽ thừa hoặc quá phức tạp (như các dịch vụ Serverless tự động Lambda, DynamoDB của bài mẫu) không khớp với mã nguồn Spring Boot truyền thống của nhóm, tránh rủi ro bị Admin chất vấn khi bảo vệ tiến độ.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+#### B. Tiếp thu kiến thức từ phản hồi cộng đồng (Community Review Insights)
+* **Học hỏi từ các bài đánh giá thực chiến:**
+  * Nghiên cứu kỹ lưỡng các comment góp ý của Admin AWS Study Group trên các sơ đồ hạ tầng tương tự để rút kinh nghiệm cho dự án nhóm.
+  * Nắm rõ các lỗi chí mạng thường gặp khi vẽ sơ đồ: Mũi tên chỉ ngược luồng dữ liệu, đặt cơ sở dữ liệu quan hệ ở Public Subnet, hoặc cấu hình sai quy tắc điều hướng của tường lửa Security Groups.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+#### C. Định hình phương án triển khai thực tế (Deployment Alignment)
+* Đảm bảo sự liên kết chặt chẽ giữa lý thuyết hạ tầng đám mây và cấu trúc code local hiện tại của dự án. 
+* Giữ vững tiêu chí thiết kế hệ thống tối giản, thực tế, tập trung vào việc lưu trữ ảnh thú cưng/hóa đơn qua S3 và chạy ứng dụng Spring Boot ổn định, giúp nhóm tự tin làm chủ cấu trúc hệ thống mà không bị quá tải về mặt kiến thức.

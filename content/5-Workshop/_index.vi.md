@@ -1,33 +1,104 @@
 ---
 title: "Workshop"
-date: 2024-01-01
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Pet Resort & Care - AWS Workshop Series
 
+Các workshop thực hành xây dựng hệ thống Pet Resort & Care System trên nền tảng điện toán đám mây AWS.
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+## 🎯 Tổng quan Workshop
 
-#### Tổng quan
+Trong series workshop này, bạn sẽ học cách đưa một ứng dụng web full-stack thực tế lên AWS. Ứng dụng bao gồm giao diện Frontend xây dựng bằng ReactJS và Backend API bằng Java Spring Boot, sử dụng kiến trúc phân lớp cơ bản nhưng đáp ứng tốt chuẩn triển khai thực tế.
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+**Pet Resort & Care System** là nền tảng đặt lịch và chăm sóc thú cưng với các tính năng:
+- 🛒 Hiển thị danh mục sản phẩm và dịch vụ Spa cho thú cưng
+- 📅 Đặt lịch hẹn và quản lý giỏ hàng
+- 👥 Hệ thống phân quyền cơ bản: Khách hàng, Nhân viên, Admin
+- 🖼️ Lưu trữ và quản lý hình ảnh an toàn trên Cloud
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+---
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+## 📚 Series Workshop
 
-#### Nội dung
+### Workshop Cốt lõi
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+#### 1. [Deploy ReactJS Frontend với S3 & CloudFront](5.1-deploy-frontend/)
+⏱️ **45 - 60 phút** | 🎯 **Beginner-Intermediate**
+
+Tối ưu chi phí bằng cách đóng gói ReactJS thành các file tĩnh và lưu trữ trên Amazon S3, sau đó phân phối qua mạng nội dung CloudFront (CDN) để web tải nhanh hơn.
+
+**Bạn sẽ thực hành:**
+- Build mã nguồn ReactJS (Vite)
+- Thiết lập S3 Bucket làm Static Website
+- Cấu hình CloudFront CDN và HTTPS
+- Tích hợp GitHub Actions để tự động cập nhật code (CI/CD cơ bản)
+
+---
+
+#### 2. [Deploy Java Spring Boot Backend trên Amazon EC2](5.2-ec2-backend/)
+⏱️ **60 - 90 phút** | 🎯 **Intermediate**
+
+Triển khai mã nguồn Backend lên máy chủ ảo EC2, kết nối với cơ sở dữ liệu quan hệ và thiết lập Load Balancer để điều phối traffic.
+
+**Bạn sẽ thực hành:**
+- Cấu hình mạng VPC cơ bản và Security Group
+- Khởi tạo Database với Amazon RDS (MySQL)
+- Tăng tốc độ truy vấn với ElastiCache (Redis)
+- Deploy file `.jar` Spring Boot lên Amazon EC2
+- Cấu hình Application Load Balancer (ALB) để kết nối với Frontend
+
+---
+
+#### 3. [Video Demo & Tài liệu Tham khảo](5.3-demo/)
+⏱️ **5 - 10 phút** | 🎯 **General**
+
+Xem video chạy thử demo thực tế trên AWS và truy cập các liên kết tham khảo, tài liệu học tập của AWS.
+
+---
+
+## 📋 Yêu cầu Trước khi Bắt đầu
+
+Trước khi thực hành, hãy đảm bảo bạn có:
+- ✅ Tài khoản AWS (Nên dùng tài khoản đang trong gói Free Tier)
+- ✅ Tài khoản GitHub
+- ✅ Node.js 18+ và npm
+- ✅ Java JDK 17 trở lên
+- ✅ Git đã được cài đặt
+- ✅ Code editor (VS Code hoặc IntelliJ IDEA)
+- ✅ Hiểu biết cơ bản về ReactJS, Java và cách gõ lệnh Terminal
+
+---
+
+## 💰 Ước tính Chi phí
+
+Bằng cách tận dụng tối đa gói **AWS Free Tier**, chi phí duy trì hệ thống cho mục đích học tập và làm dự án được tối ưu rất tốt:
+
+| Dịch vụ | Mức Free Tier | Chi phí ước tính (Thực hành) |
+|---------|-----------|---------------|
+| **S3 & CloudFront** | 5GB Storage, 1TB Transfer | ~$0/tháng |
+| **Amazon EC2** | 750 giờ/tháng (t3.micro) | ~$0/tháng |
+| **Amazon RDS** | 750 giờ/tháng (t3.micro) | ~$0/tháng |
+| **ElastiCache** | 750 giờ/tháng (t2.micro) | ~$0/tháng |
+| **Load Balancer (ALB)** | Không có Free tier | ~$16 - $20/tháng |
+
+**Tổng ước tính chi phí (Thực hành):** Khoảng **$15 - $25/tháng** (Chi phí chủ yếu đến từ việc duy trì Load Balancer. Nếu tắt Load Balancer khi không dùng, chi phí gần như bằng $0).
+
+> **Lưu ý:** Kiến trúc đầy đủ Multi-AZ như mô tả trong [Proposal](../2-Proposal/) có chi phí khoảng **~$168/tháng** do 2 NAT Gateways, Multi-AZ RDS, và ElastiCache replicas. Môi trường thực hành của workshop sử dụng cấu hình đơn giản hơn để tiết kiệm chi phí.
+
+---
+
+## 🚀 Bắt đầu
+
+Bắt đầu với [Workshop 1: Deploy Frontend với S3 & CloudFront](5.1-deploy-frontend/)
+
+---
+
+## 📖 Tài liệu Bổ sung
+
+- [AWS Free Tier](https://aws.amazon.com/free/)
+- [React Documentation](https://react.dev/)
+- [Spring Boot Reference](https://spring.io/projects/spring-boot)
+- [Tài liệu thiết kế hệ thống của nhóm](../2-Proposal/)

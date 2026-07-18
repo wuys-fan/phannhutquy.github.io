@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Mục tiêu tuần 3:
+- Tìm hiểu cơ chế quản lý lưu trữ đối tượng và tài nguyên tĩnh trên đám mây.
+- Khởi tạo môi trường lưu trữ hình ảnh thử nghiệm phục vụ cho các tài nguyên (ảnh thú cưng, hóa đơn dịch vụ) của dự án Pet Resort.
+- Thiết lập các cơ chế giám sát tài khoản và cảnh báo chi phí ban đầu.
 
-### Mục tiêu tuần 3:
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày kết thúc | Tài liệu tham khảo |
+|------|----------|--------------|---------------|-------------------|
+| 1 | Cấu hình và kích hoạt hệ thống cảnh báo ngân sách tự động (AWS Budgets / Billing Alarms) để kiểm soát dung lượng Credit thực tập. | 04/05/2026 | 04/05/2026 | Tài liệu AWS Billing |
+| 2 | Nghiên cứu lý thuyết nền tảng về dịch vụ Amazon S3 (Simple Storage Service), các khái niệm về Bucket, Object và Storage Classes. | 05/05/2026 | 05/05/2026 | Tài liệu Amazon S3 |
+| 3 | Thực hành tạo S3 Bucket đầu tiên trên AWS Console với tên định danh độc nhất phục vụ lưu trữ tài nguyên: `petshop-media-storage`. | 06/05/2026 | 06/05/2026 | Giao diện điều khiển AWS |
+| 4 | Thao tác tải lên (Upload) dữ liệu hình ảnh mẫu thông qua giao diện S3 Console; tìm hiểu cấu hình Object Ownership và quyền truy cập cơ bản. | 07/05/2026 | 07/05/2026 | Tài liệu Quản lý đối tượng S3 |
+| 5 | Tìm hiểu nguyên tắc bảo mật IAM nâng cao; thực hành tạo IAM User riêng biệt có phân quyền giới hạn thay vì thao tác trực tiếp bằng Root Account. | 08/05/2026 | 08/05/2026 | AWS IAM Best Practices |
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Thành tích tuần 3:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+• Kích hoạt thành công công cụ kiểm soát ngân sách tự động để ngăn chặn rủi ro phát sinh chi phí ngoài ý muốn trên tài khoản đám mây.
 
+• Khởi tạo thành công không gian lưu trữ biệt lập `petshop-media-storage` trên Amazon S3, làm quen với luồng upload và quản lý file tĩnh.
 
-### Kết quả đạt được tuần 3:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+• Nắm vững các bước phân quyền cơ bản và thiết lập chính sách bảo mật IAM an toàn theo tiêu chuẩn khuyến nghị của AWS.

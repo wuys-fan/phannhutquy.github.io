@@ -1,57 +1,34 @@
 ---
-title: "Week 8 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 8"
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 8 Objectives:
+* Complete the packaging process of the Pet Resort & Care Spring Boot source code into an executable archive (.jar) on the local environment.
+* Research cloud deployment solutions for hosting the backend application: compare PaaS (AWS Elastic Beanstalk) vs IaaS (Amazon EC2).
+* After receiving mentor guidance, pivot towards deploying directly on Amazon EC2 to gain deeper hands-on infrastructure experience.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+### Tasks carried out this week:
+| Day | Detailed Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 1 | - Pause feature development to study the Build and Packaging lifecycle of a Spring Boot application.<br>- Read documentation covering Maven Lifecycles (Clean, Compile, Package). | 08/06/2026 | 08/06/2026 | Spring Boot Maven Docs |
+| 2 | - Practice executing the `mvn clean package` command within the VS Code / IntelliJ terminal to build the Pet Shop backend into a `.jar` file.<br>- Resolve minor build failures related to skipped Test Cases. | 09/06/2026 | 09/06/2026 | StackOverflow / Java Blogs |
+| 3 | - Close the IDE completely, open Windows Command Prompt, and execute the generated binary using the `java -jar petshop-backend.jar` command.<br>- Retest API endpoints via Postman to ensure stable standalone execution. | 10/06/2026 | 10/06/2026 | Java Documentation |
+| 4 | - Initially explored **AWS Elastic Beanstalk** (PaaS) as a simpler deployment option that handles EC2 provisioning automatically.<br>- Compared with raw Amazon EC2 deployment: Beanstalk is easier but offers less control and learning value. | 11/06/2026 | 11/06/2026 | AWS Elastic Beanstalk Guide |
+| 5 | - After consulting with mentors, the team decided to deploy directly onto **Amazon EC2** instead of Beanstalk. The reasoning: manually configuring Linux servers, Security Groups, and Load Balancers provides far more valuable hands-on experience for the internship goals. | 12/06/2026 | 12/06/2026 | Amazon EC2 Linux Docs |
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Mastered Local Application Packaging Skills:**
+  * Understood the operational difference between running source code inside an IDE versus executing an independently compiled binary.
+  * Successfully utilized Apache Maven to compile and package the Spring Boot project into a complete, standalone `.jar` executable.
+  * Ensured the backend application runs stably on the local Windows environment using the `java -jar` protocol, successfully connecting to the local database.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Developed Cloud Service Evaluation Mindset:**
+  * Grasped the fundamental differences between IaaS (Amazon EC2) and PaaS (AWS Elastic Beanstalk) deployment models.
+  * Evaluated trade-offs: Beanstalk is easier but hides infrastructure details; EC2 requires more effort but maximizes learning outcomes.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Defined a Deployment Roadmap for Upcoming Weeks:**
+  * Following mentor advice, aligned on deploying directly onto **Amazon EC2** for the Pet Resort & Care backend. Although this path demands Linux command-line skills and manual infrastructure configuration, the team recognized it as a much richer learning opportunity aligned with the internship's educational objectives.
