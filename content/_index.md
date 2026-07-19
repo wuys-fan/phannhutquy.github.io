@@ -28,7 +28,7 @@ chapter: false
 
 &emsp; **Internship Period:** From April 17, 2026 to July 20, 2026
 
-![Profile Picture](/images/avt.jpg)
+![Profile Picture](/phannhutquy.github.io/images/avt.jpg)
 
 ### Report Content
 
