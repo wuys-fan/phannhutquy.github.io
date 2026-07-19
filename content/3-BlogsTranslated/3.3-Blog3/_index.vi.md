@@ -53,7 +53,7 @@ Sự kết hợp này giúp hệ thống hoạt động với hiệu suất cự
 
 > *Hình 1. Kiến trúc tổng quan mô tả các EC2 Instances kết nối qua cổng TCP 2049 (NFS) đến S3 Files Mount Target để đọc/ghi trực tiếp vào S3 Bucket.*
 
-![Kiến trúc tổng quan các EC2 Instances kết nối qua cổng TCP 2049 (NFS) đến S3 Files Mount Target](/images/3-BlogsTranslated/blog3-1.png)
+![Kiến trúc tổng quan các EC2 Instances kết nối qua cổng TCP 2049 (NFS) đến S3 Files Mount Target](/phannhutquy.github.io/images/3-BlogsTranslated/blog3-1.png)
 
 ---
 
@@ -67,7 +67,7 @@ Việc thiết lập S3 Files giờ đây cực kỳ trực quan thông qua giao
 2. **Cấu hình Mount Targets:** Đây là các điểm cuối mạng nội bộ nằm trong các Availability Zone (AZ) của Virtual Private Cloud (VPC).
 > *Hình 3. Giao diện quản lý Mount targets hiển thị danh sách các IP nội bộ và trạng thái kết nối "Available" cho phép các tài nguyên tính toán truy cập hệ thống tệp.*
 
-![Giao diện quản lý Mount targets hiển thị danh sách các IP nội bộ và trạng thái kết nối Available](/images/3-BlogsTranslated/blog3-2.png)
+![Giao diện quản lý Mount targets hiển thị danh sách các IP nội bộ và trạng thái kết nối Available](/phannhutquy.github.io/images/3-BlogsTranslated/blog3-2.png)
 
 ---
 

@@ -15,7 +15,7 @@ Now we will test the newly deployed Spring Boot backend, verify the database con
 2. Select the `petshop-alb` you created in the previous step.
 3. In the **Description** tab, copy the **DNS name** (e.g., `petshop-alb-123456789.ap-southeast-1.elb.amazonaws.com`).
 
-![ALB DNS Name](/images/5-Workshop/alb-dns.png)
+![ALB DNS Name](/phannhutquy.github.io/images/5-Workshop/alb-dns.png)
 
 ## Step 2: Test API via Swagger UI
 
@@ -26,24 +26,24 @@ http://<Your-ALB-DNS-name>/swagger-ui/index.html
 
 You should see the **Swagger UI** displaying all Pet Resort endpoints (Products, Services, Bookings, Users). Execute an API call like `GET /api/products` to ensure it returns a `200 OK` response.
 
-![Swagger UI Backend](/images/5-Workshop/swagger-ui.png)
+![Swagger UI Backend](/phannhutquy.github.io/images/5-Workshop/swagger-ui.png)
 
 ## Step 3: Verify Database & Cache Connections
 
 During the setup of the **Amazon RDS (MySQL)** database, you will see the estimated cost summary:
-![RDS Database Estimated Costs](/images/1-Worklog/rds_estimated_costs.png)
+![RDS Database Estimated Costs](/phannhutquy.github.io/images/1-Worklog/rds_estimated_costs.png)
 
 Once launched, verify that the database status changes to **Creating** and eventually **Available**:
-![RDS Instance Launching](/images/1-Worklog/rds_creating.png)
+![RDS Instance Launching](/phannhutquy.github.io/images/1-Worklog/rds_creating.png)
 
 Ensure the database settings are configured correctly, showing the connection details and private subnets:
-![RDS Connectivity Details](/images/1-Worklog/rds_connectivity.png)
+![RDS Connectivity Details](/phannhutquy.github.io/images/1-Worklog/rds_connectivity.png)
 
 For cache acceleration, configure and review the **Amazon ElastiCache (Valkey)** settings:
-![ElastiCache Valkey Settings](/images/1-Worklog/elasticache_settings.png)
+![ElastiCache Valkey Settings](/phannhutquy.github.io/images/1-Worklog/elasticache_settings.png)
 
 Verify that the ElastiCache cluster is created successfully and reaches the available status:
-![ElastiCache Valkey Status](/images/1-Worklog/elasticache_creating.png)
+![ElastiCache Valkey Status](/phannhutquy.github.io/images/1-Worklog/elasticache_creating.png)
 
 Instead of blindly trusting the API, we will manually verify if data schemas are correctly written to **Amazon RDS (MySQL)**.
 
@@ -95,14 +95,14 @@ To monitor system health in real time and receive instant alerts when anomalies 
   - **ActiveConnectionCount** & **RequestCount** on the Application Load Balancer (ALB).
   - **HTTPCode_Target_5XX_Count** to detect any system errors originating from the Backend.
 
-![CloudWatch Dashboard](/images/5-Workshop/cloudwatch-dashboard.png)
+![CloudWatch Dashboard](/phannhutquy.github.io/images/5-Workshop/cloudwatch-dashboard.png)
 
 ### 2. Create Amazon SNS Topic for Notifications
 - Go to **Amazon SNS** → **Topics** → **Create topic**.
 - Type: **Standard** | Name: `petshop-Order-Notifications`.
 - Create **Subscriptions** (using Email or SMS) pointing to the administrator's endpoints to receive urgent alerts when CloudWatch metrics exceed threshold limits (e.g., CPU utilization exceeds 80%).
 
-![Amazon SNS Topic](/images/5-Workshop/sns-topic.png)
+![Amazon SNS Topic](/phannhutquy.github.io/images/5-Workshop/sns-topic.png)
 
 ### 3. Read Logs if the API becomes unresponsive
 1. Go to **AWS Console** → **CloudWatch** → **Log groups**.

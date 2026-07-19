@@ -20,7 +20,7 @@ npm run build
 ```
 2. Once completed, a `build` (or `dist`) folder will be generated. This is the folder we will upload to AWS.
 
-![ReactJS Build Output](/images/1-Worklog/react_build_output.png)
+![ReactJS Build Output](/phannhutquy.github.io/images/1-Worklog/react_build_output.png)
 
 ---
 
@@ -34,7 +34,7 @@ npm run build
 5. Uncheck **Block all public access** (Since this is a public website).
 6. Click **Create bucket**.
 
-![Create S3 Bucket](/images/5-Workshop/s3-create.png)
+![Create S3 Bucket](/phannhutquy.github.io/images/5-Workshop/s3-create.png)
 
 ### 2.2 Upload Source Code and Enable Website Hosting
 1. Open the newly created Bucket.
@@ -65,16 +65,16 @@ To make the web application faster and more secure, we place CloudFront in front
 6. **Web Application Firewall (WAF)**: Select **Enable security protections** to automatically block malicious requests.
 7. Click **Create distribution**.
 
-![Create CloudFront Distribution](/images/5-Workshop/cloudfront-create.png)
+![Create CloudFront Distribution](/phannhutquy.github.io/images/5-Workshop/cloudfront-create.png)
 
 Once WAF is enabled, a **Web ACL** is automatically created to monitor and secure your CloudFront distribution traffic:
-![WAF Web ACL List](/images/5-Workshop/waf-web-acl.png)
+![WAF Web ACL List](/phannhutquy.github.io/images/5-Workshop/waf-web-acl.png)
 
 ### 3.2 Get the Access URL
 After 3-5 minutes, CloudFront will finish deploying.
 Copy the URL under **Distribution domain name** (e.g., `d3uvhesft661gl.cloudfront.net`) and paste it into your browser to test the website. You can also append specific routes to test sub-pages (e.g., `https://d3uvhesft661gl.cloudfront.net/services/tam-spa-thu-cung`).
 
-![Pet Resort Website on CloudFront](/images/5-Workshop/cloudfront-domain.png)
+![Pet Resort Website on CloudFront](/phannhutquy.github.io/images/5-Workshop/cloudfront-domain.png)
 
 ---
 
@@ -123,7 +123,7 @@ Since ReactJS is a Single Page Application (SPA), AWS S3 does not understand vir
 5. Response page path: `/index.html`.
 6. HTTP Response code: `200: OK`.
 
-![CloudFront Error Pages](/images/5-Workshop/cloudfront-error.png)
+![CloudFront Error Pages](/phannhutquy.github.io/images/5-Workshop/cloudfront-error.png)
 
 ---
 

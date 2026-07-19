@@ -31,7 +31,7 @@ Theo bài viết, để một mô hình AI hoạt động trơn tru trong thực
 - **Huấn luyện (Training & Tuning):** Cho AI học lại từ dữ liệu mới để thông minh hơn, đồng thời tự động tối ưu hóa siêu tham số (Hyperparameter tuning).
 - **Triển khai (Deployment):** Đưa mô hình AI đã học xong lên máy chủ thành các Endpoint (điểm cuối) để phục vụ người dùng theo thời gian thực hoặc xử lý hàng loạt.
 
-![Quy trình Machine Learning](/images/3-BlogsTranslated/blog1-1.png)
+![Quy trình Machine Learning](/phannhutquy.github.io/images/3-BlogsTranslated/blog1-1.png)
 
 ---
 
@@ -46,7 +46,7 @@ Khi áp dụng mô hình này lên AWS, chúng ta cần map (ánh xạ) các bư
 | **Huấn luyện mô hình** | Amazon SageMaker Training Instances, EC2 | Cấp phát các cụm máy chủ có GPU mạnh mẽ để train AI, sau đó tự động tắt khi train xong. |
 | **Triển khai & Suy luận** | Amazon SageMaker Endpoints, API Gateway, AWS Lambda | Đóng gói mô hình thành REST API để Frontend/Backend của ứng dụng gọi tới. |
 
-![Kiến trúc Machine Learning Engineering](/images/3-BlogsTranslated/blog1-2.png)
+![Kiến trúc Machine Learning Engineering](/phannhutquy.github.io/images/3-BlogsTranslated/blog1-2.png)
 
 ---
 

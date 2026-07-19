@@ -24,7 +24,7 @@ Nhóm đã cố gắng áp dụng mô hình Kiến trúc 3 lớp (3-Tier Archite
 
 Dưới đây là sơ đồ kiến trúc hệ thống mà nhóm đã phác thảo và triển khai sau khi được các mentor góp ý sửa lỗi luồng (flow) để đạt chuẩn High Availability (Độ sẵn sàng cao):
 
-![Kiến trúc AWS Hệ thống Pet Resort](/images/2-Proposal/aws_architecture.jpg)
+![Kiến trúc AWS Hệ thống Pet Resort](/phannhutquy.github.io/images/2-Proposal/aws_architecture.jpg)
 
 #### 2.1. Lớp Biên & Phân Phối (Edge Layer)
 *   **AWS WAF & CloudFront:** Nhóm tích hợp WAF và CloudFront (CDN) để tăng tốc độ phân phối trang web tĩnh và chặn các luồng traffic độc hại. Sơ đồ sử dụng 2 Amazon S3 Bucket: một cho **Frontend** (chứa giao diện ReactJS) và một cho **Media** (chứa hình ảnh sản phẩm/thú cưng do người dùng upload).

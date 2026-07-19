@@ -24,7 +24,7 @@ Our team has applied the 3-Tier Architecture model on AWS to gain hands-on exper
 
 Below is the system architecture diagram that our team sketched and deployed after receiving mentor feedback to fix the traffic flow and achieve High Availability standards:
 
-![AWS Architecture Pet Resort System](/images/2-Proposal/aws_architecture.jpg)
+![AWS Architecture Pet Resort System](/phannhutquy.github.io/images/2-Proposal/aws_architecture.jpg)
 
 #### 2.1. Edge & Delivery Layer
 *   **AWS WAF & CloudFront:** We integrated WAF and CloudFront (CDN) to accelerate static content delivery and block malicious traffic. The architecture utilizes two Amazon S3 Buckets: one for the **Frontend** (hosting the ReactJS UI) and one for **Media** (storing product/pet images uploaded by users).

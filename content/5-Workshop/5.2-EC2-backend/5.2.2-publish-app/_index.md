@@ -26,7 +26,7 @@ mvn clean package -DskipTests
 
 After pressing Enter, Maven will download necessary dependencies and package the app. Once you see the green **[INFO] BUILD SUCCESS** message, the process is successfully completed!
 
-![Terminal Build Success in VS Code](/images/5-Workshop/build-backend-2.png)
+![Terminal Build Success in VS Code](/phannhutquy.github.io/images/5-Workshop/build-backend-2.png)
 
 #### Deployment Package Ready! 📦
 
@@ -39,7 +39,7 @@ The execution of the command automatically generates a folder named `target`, vi
 
 **File Location:**
 
-![Maven Build target Folder](/images/1-Worklog/maven_build_output.png)
+![Maven Build target Folder](/phannhutquy.github.io/images/1-Worklog/maven_build_output.png)
 
 #### Common Issues
 

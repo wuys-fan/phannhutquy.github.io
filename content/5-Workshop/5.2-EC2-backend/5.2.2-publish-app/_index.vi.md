@@ -26,7 +26,7 @@ mvn clean package -DskipTests
 
 Sau khi nhấn Enter, Maven sẽ tải các thư viện cần thiết và tiến hành đóng gói. Khi bạn nhìn thấy dòng chữ **[INFO] BUILD SUCCESS** màu xanh lá, quá trình đã hoàn tất thành công!
 
-![Terminal Build Success trong VS Code](/images/5-Workshop/build-backend-2.png)
+![Terminal Build Success trong VS Code](/phannhutquy.github.io/images/5-Workshop/build-backend-2.png)
 
 #### Deployment Package Sẵn sàng! 📦
 
@@ -39,7 +39,7 @@ Lệnh trên đã tự động tạo ra một thư mục có tên là `target` n
 
 **Vị trí File:**
 
-![Thư mục target chứa tệp JAR](/images/1-Worklog/maven_build_output.png)
+![Thư mục target chứa tệp JAR](/phannhutquy.github.io/images/1-Worklog/maven_build_output.png)
 
 #### Các Vấn đề Thường gặp
 

@@ -31,7 +31,7 @@ According to the article, for an AI model to run smoothly in reality, it needs t
 - **Training & Tuning:** Let the AI relearn from the new data to become smarter, while automatically performing Hyperparameter tuning.
 - **Deployment:** Bring the trained AI model to servers as Endpoints to serve users in real-time or via batch processing.
 
-![Machine Learning Process](/images/3-BlogsTranslated/blog1-1.png)
+![Machine Learning Process](/phannhutquy.github.io/images/3-BlogsTranslated/blog1-1.png)
 
 ---
 
@@ -46,7 +46,7 @@ When applying this model on AWS, we need to map the above steps with correspondi
 | **Model Training** | Amazon SageMaker Training Instances, EC2 | Provisions server clusters with powerful GPUs to train AI, then automatically shuts them down when finished. |
 | **Deployment & Inference** | Amazon SageMaker Endpoints, API Gateway, AWS Lambda | Packages the model into a REST API for the application's Frontend/Backend to invoke. |
 
-![Machine Learning Engineering](/images/3-BlogsTranslated/blog1-2.png)
+![Machine Learning Engineering](/phannhutquy.github.io/images/3-BlogsTranslated/blog1-2.png)
 
 ---
 

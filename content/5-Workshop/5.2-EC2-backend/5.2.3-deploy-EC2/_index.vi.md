@@ -13,10 +13,10 @@ Bây giờ chúng ta sẽ đưa file `.jar` đã build ở bước trước lên
 
 Để đảm bảo bảo mật, máy chủ EC2 backend (chứa logic và kết nối DB) sẽ được đặt trong **Private Subnet** (không có IP Public). Để EC2 có thể tải các gói cài đặt (như Java) từ Internet về, chúng ta cần cấu hình NAT Gateway ở Public Subnet.
 
-![VPC Resource Map](/images/1-Worklog/vpc_resource_map.png)
+![VPC Resource Map](/phannhutquy.github.io/images/1-Worklog/vpc_resource_map.png)
 
 Xác minh rằng NAT Gateway đã được khởi tạo thành công và liên kết với public subnet:
-![NAT Gateway Configuration](/images/1-Worklog/nat_gateway_pending.png)
+![NAT Gateway Configuration](/phannhutquy.github.io/images/1-Worklog/nat_gateway_pending.png)
 
 #### Bước 2: Khởi tạo EC2 Instance
 
@@ -29,10 +29,10 @@ Xác minh rằng NAT Gateway đã được khởi tạo thành công và liên k
     * Chọn Subnet: **Private Subnet**
     * Security Group: Chọn `SG_Backend` (Lưu ý: Inbound rules của SG này chỉ mở port `8080` cho phép luồng dữ liệu từ `SG_ALB` đi vào. Tuyệt đối không mở port 22, chúng ta sẽ quản trị server qua AWS Systems Manager).
 
-![Security Groups](/images/1-Worklog/security_groups.png)
+![Security Groups](/phannhutquy.github.io/images/1-Worklog/security_groups.png)
 
 Đồng thời, tạo một KMS Customer Managed Key để mã hóa các thông số và bí mật của hệ thống:
-![KMS Key Creation](/images/1-Worklog/kms_key.png)
+![KMS Key Creation](/phannhutquy.github.io/images/1-Worklog/kms_key.png)
 
 Click **Launch instance** và đợi trạng thái chuyển sang `Running`.
 
@@ -71,7 +71,7 @@ Lúc này, API của bạn đã chạy trên cổng `8080` của địa chỉ Pr
  
 Bạn có thể kiểm tra xem ứng dụng đã khởi chạy thành công hay chưa bằng cách kiểm tra log (ví dụ: chạy lệnh `cat app.log` hoặc chạy trực tiếp lệnh Java để quan sát log xuất ra màn hình console):
 
-![Ứng dụng Spring Boot khởi chạy thành công trên cổng 8080](/images/5-Workshop/backend-run.png)
+![Ứng dụng Spring Boot khởi chạy thành công trên cổng 8080](/phannhutquy.github.io/images/5-Workshop/backend-run.png)
 
 #### Bước 6: Tạo Target Group (Nhóm đối tượng đích)
 
@@ -84,7 +84,7 @@ Trước khi cấu hình bộ cân bằng tải Application Load Balancer, chún
 5. **VPC**: Chọn `Pet-Shop-vpc`.
 6. Click **Next** → Chọn EC2 `petshop-backend-server` và đăng ký nó → Click **Create target group**.
 
-![Cấu hình Target Group](/images/5-Workshop/target-group.png)
+![Cấu hình Target Group](/phannhutquy.github.io/images/5-Workshop/target-group.png)
 
 #### Bước 7: Cấu hình Application Load Balancer (ALB)
 
@@ -99,7 +99,7 @@ Vì EC2 Backend nằm ở Private Subnet không ai truy cập được, chúng t
    - **Default action**: Chọn **Forward to** và trỏ tới Target Group `ALB-target-group` vừa tạo ở bước trên.
 6. Click **Create load balancer**.
 
-![Cấu hình Load Balancer](/images/5-Workshop/alb-dns.png)
+![Cấu hình Load Balancer](/phannhutquy.github.io/images/5-Workshop/alb-dns.png)
 
 #### Bước 8: Cấu hình CORS cho Frontend
 
@@ -133,7 +133,7 @@ public class CorsConfig implements WebMvcConfigurer {
    - **Image name**: `pet-shop-backend-AMI`.
    - Click **Create image**. Trạng thái của AMI sẽ chuyển sang `Available` sau khi quá trình tạo hoàn tất.
    
-   ![Tạo Amazon Machine Image](/images/5-Workshop/backend-ami.png)
+   ![Tạo Amazon Machine Image](/phannhutquy.github.io/images/5-Workshop/backend-ami.png)
 
 2. **Tạo Launch Template (Bản mẫu cấu hình khởi chạy):**
    - Vào **EC2 Console** → Chọn **Launch Templates** ở menu trái → Click **Create launch template**.
@@ -142,7 +142,7 @@ public class CorsConfig implements WebMvcConfigurer {
    - Chọn Instance type (`t3.micro`), Key pair, và Security Group `SG_Backend` giống như đã thiết lập thủ công ở Bước 2.
    - Nhấp **Create launch template**.
    
-   ![Cấu hình Launch Template](/images/5-Workshop/launch-template.png)
+   ![Cấu hình Launch Template](/phannhutquy.github.io/images/5-Workshop/launch-template.png)
 
 3. **Cấu hình Auto Scaling Group (ASG):**
    - Vào **EC2 Console** → Chọn **Auto Scaling Groups** ở menu trái → Click **Create Auto Scaling group**.
@@ -153,7 +153,7 @@ public class CorsConfig implements WebMvcConfigurer {
    - **Group size (Kích thước nhóm)**: Cấu hình tải cơ bản với **Desired capacity: 2**, **Minimum capacity: 2**, và **Maximum capacity: 4** nhằm đảm bảo luôn duy trì tối thiểu 2 máy chủ chạy song song.
    - Hoàn tất các bước và chọn **Create Auto Scaling group**.
 
-   ![Cấu hình Auto Scaling Group](/images/5-Workshop/auto-scaling.png)
+   ![Cấu hình Auto Scaling Group](/phannhutquy.github.io/images/5-Workshop/auto-scaling.png)
 
 #### Các Vấn đề Thường gặp
 

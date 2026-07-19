@@ -69,7 +69,7 @@ Quy trình xác thực tổng quát diễn ra như sau[cite: 4]:
     *   **Nếu an toàn:** Cho phép đăng nhập (có thể dùng Silent Authentication)[cite: 4].
     *   **Nếu phát hiện rủi ro:** Yêu cầu thêm bước xác minh hoặc chặn giao dịch đáng ngờ[cite: 4].
 
-![Kiến trúc Xác thực thích ứng rủi ro](/images/3-BlogsTranslated/blog2-1.png)
+![Kiến trúc Xác thực thích ứng rủi ro](/phannhutquy.github.io/images/3-BlogsTranslated/blog2-1.png)
 
 ---
 

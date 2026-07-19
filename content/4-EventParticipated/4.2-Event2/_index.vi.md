@@ -97,5 +97,5 @@ Tham gia sự kiện FCAJ Community Day mang lại cho tôi góc nhìn thực ti
 
 Khác với những lý thuyết viển vông, các diễn giả đã đưa ra những bài toán rất "đời thực" (như việc AI phải nghe hiểu giọng vùng miền Việt Nam, hay cách cấu hình để AI không làm rò rỉ dữ liệu ra Internet). Đặc biệt, phần chia sẻ về Amazon Q và giao thức MCP thực sự mở ra cho tôi hướng đi mới trong việc xây dựng các ứng dụng GenAI bảo mật cho doanh nghiệp. Giờ giải lao cũng là cơ hội tuyệt vời để tôi được học hỏi tư duy "thực thi" mạnh mẽ từ các anh chị chuyên gia.
 
-![Steve Trần thuyết trình về AgenticOps cho Cloud](/images/4-EventParticipated/event2-1.png)
-![Giao lưu và quét mã QR tại sự kiện](/images/4-EventParticipated/event2-2.png)
+![Steve Trần thuyết trình về AgenticOps cho Cloud](/phannhutquy.github.io/images/4-EventParticipated/event2-1.png)
+![Giao lưu và quét mã QR tại sự kiện](/phannhutquy.github.io/images/4-EventParticipated/event2-2.png)

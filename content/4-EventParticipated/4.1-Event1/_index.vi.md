@@ -123,7 +123,7 @@ Tham gia sự kiện công nghệ ngày 6/6/2026 thực sự là một trải ng
 #### Bài học rút ra
 - Công nghệ liên tục thay đổi (từ máy chủ vật lý sang Cloud, từ SQL sang Graph DB, từ cấu hình Firewall thủ công sang AI/ML). Để không bị bỏ lại phía sau, bản thân phải liên tục cập nhật kiến thức, đồng thời xây dựng một môi trường làm việc nhóm vững chắc để cùng nhau phát triển.
 
-![Vinh Trần - Từ IT Helpdesk lên Senior Sysadmin](/images/4-EventParticipated/event1-1.png)
-![Kiến trúc AWS cho Godot Game Server](/images/4-EventParticipated/event1-2.png)
+![Vinh Trần - Từ IT Helpdesk lên Senior Sysadmin](/phannhutquy.github.io/images/4-EventParticipated/event1-1.png)
+![Kiến trúc AWS cho Godot Game Server](/phannhutquy.github.io/images/4-EventParticipated/event1-2.png)
 
 > Tổng thể, sự kiện không chỉ cung cấp những kiến thức kỹ thuật chuyên sâu trên nền tảng AWS mà còn tiếp thêm năng lượng, truyền cảm hứng mạnh mẽ cho hành trình phát triển sự nghiệp kỹ sư phần mềm và Cloud của tôi.

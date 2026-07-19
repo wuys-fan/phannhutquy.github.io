@@ -53,7 +53,7 @@ This combination enables the system to operate with extreme high throughput, min
 
 > *Figure 1. Architectural overview illustrating EC2 Instances connecting via TCP 2049 (NFS) to an S3 Files Mount Target to read/write directly into an S3 Bucket.*
 
-![Architectural overview illustrating EC2 Instances connecting via TCP 2049 (NFS) to an S3 Files Mount Target](/images/3-BlogsTranslated/blog3-1.png)
+![Architectural overview illustrating EC2 Instances connecting via TCP 2049 (NFS) to an S3 Files Mount Target](/phannhutquy.github.io/images/3-BlogsTranslated/blog3-1.png)
 
 ---
 
@@ -67,7 +67,7 @@ Setting up S3 Files is incredibly intuitive via the AWS management console:
 2. **Configure Mount Targets:** These are internal network endpoints located within Virtual Private Cloud (VPC) Availability Zones (AZ).
 > *Figure 3. The Mount targets management interface displaying internal IPs and the "Available" connection status allowing compute resources to access the file system.*
 
-![Mount targets management interface displaying internal IPs and "Available" status](/images/3-BlogsTranslated/blog3-2.png)
+![Mount targets management interface displaying internal IPs and "Available" status](/phannhutquy.github.io/images/3-BlogsTranslated/blog3-2.png)
 
 ---
 

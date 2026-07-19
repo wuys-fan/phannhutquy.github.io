@@ -69,7 +69,7 @@ The general authentication workflow is as follows[cite: 4]:
     *   **If Safe:** Allows login (potentially utilizing Silent Authentication)[cite: 4].
     *   **If Risky:** Demands supplementary verification steps or halts the suspicious transaction[cite: 4].
 
-![Risk-Adaptive Customer Sign-In](/images/3-BlogsTranslated/blog2-1.png)
+![Risk-Adaptive Customer Sign-In](/phannhutquy.github.io/images/3-BlogsTranslated/blog2-1.png)
 
 ---
 

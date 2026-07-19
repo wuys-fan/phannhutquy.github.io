@@ -84,4 +84,4 @@ Tham gia trọn vẹn 3 tiếng buổi sáng của buổi chia sẻ chuyên sâu
 - Sự kiện thực sự không chỉ mang đến kiến thức về Cloud/Data mà còn là bài học xương máu về thái độ, sự kiên trì và cách sinh tồn vững vàng trong thế giới công nghệ hiện đại.
 
 #### Một số hình ảnh sự kiện
-![Thuyết trình AWS về đầu tư nhân tài và hạ tầng](/images/4-EventParticipated/event3-1.png)
+![Thuyết trình AWS về đầu tư nhân tài và hạ tầng](/phannhutquy.github.io/images/4-EventParticipated/event3-1.png)
