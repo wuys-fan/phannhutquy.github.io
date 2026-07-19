@@ -4,17 +4,28 @@ weight: 1
 chapter: false
 ---
 
+
 # Phan Nhut Quy Internship Report
+
+
 
 ### Student Information:
 &emsp; **Full Name:** Phan Nhựt Quý
+
 &emsp; **Phone Number:** 0833664458
+
 &emsp; **Email:** quyp060@gmail.com
+
 &emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
+
 &emsp; **Major:** Information Technology
+
 &emsp; **Student ID:** 2280602670
+
 &emsp; **Internship Company:** Amazon Web Services Vietnam LLC.
+
 &emsp; **Internship Position:** FCJ Cloud Intern
+
 &emsp; **Internship Period:** From April 17, 2026 to July 20, 2026
 
 ![Profile Picture](/images/avt.jpg)
