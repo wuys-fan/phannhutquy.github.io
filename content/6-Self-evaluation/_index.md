@@ -15,46 +15,41 @@ Reflecting on my journey, I acknowledge that the system we built is still at an 
 
 | No. | Criteria | Description | Good | Fair | Average |
 | --- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --- | --- | ---------- |
-| 1 | **Technical Knowledge and Skills** | Understand the flow of a 3-Tier architecture, know how to configure basic VPC, EC2, and RDS, but lack deep performance optimization skills. | ☐ | ✅ | ☐ |
-| 2 | **Learning Ability** | Quickly adapted to new concepts on the AWS Console, proactively searched for documentation when facing network drops or permission errors. | ☐ | ✅ | ☐ |
-| 3 | **Proactiveness** | Voluntarily researched how to set up S3 Pre-signed URLs and updated the Architecture Diagram when receiving feedback from mentors. | ☐ | ✅ | ☐ |
-| 4 | **Sense of Responsibility** | Maintained a complete 12-week worklog, closely followed assigned tasks in the team to avoid delaying the overall progress. | ✅ | ☐ | ☐ |
-| 5 | **Discipline** | Attended team meetings and workshops regularly; however, sometimes tasks were piled up close to the deadline. | ☐ | ✅ | ☐ |
-| 6 | **Progressive Attitude** | Willing to scrap the old architecture diagram and redraw it when realizing the flow was wrong; unafraid to admit the system's weaknesses. | ✅ | ☐ | ☐ |
-| 7 | **Communication** | Conveying technical ideas is sometimes awkward; public speaking and presentation skills with mentors need significant improvement. | ☐ | ☐ | ✅ |
-| 8 | **Teamwork** | Coordinated smoothly with the other 4 members, knew how to share AWS resources to avoid stepping on each other's toes during deployment. | ✅ | ☐ | ☐ |
-| 9 | **Professional Conduct** | Respected the rules of the AWS community, listened to feedback, and maintained a proper attitude in a team environment. | ✅ | ☐ | ☐ |
-| 10 | **Problem-Solving Mindset** | Debugging skills on the Cloud via CloudWatch are still slow; handling backend bugs like "double-booking" is not yet thoroughly resolved. | ☐ | ☐ | ✅ |
-| 11 | **Contribution to the Project** | Completed assigned tasks regarding infrastructure architecture and wrote the deployment guidelines (README) for the Pet Resort project. | ☐ | ✅ | ☐ |
-| 12 | **Overall** | Completed the internship with many hard-earned lessons; the system runs but needs a lot of refinement to meet actual production standards. | ☐ | ✅ | ☐ |
+| 1   | **Technical Knowledge and Skills**  | Mastered network infrastructure architecture and proficiently configured core AWS services. Have a good understanding and ability to apply several advanced cloud services. | ✅  | ☐   | ☐          |
+| 2   | **Learning Ability**                | Good capability to absorb and familiarize with new concepts. Although the learning speed is not extremely fast, it ensures a solid and stable grasp of knowledge. | ☐   | ✅  | ☐          |
+| 3   | **Proactiveness**                   | Always proactive in exploring and learning new knowledge. Especially demonstrated high proactiveness in organizing team meetings, coordinating, and assigning tasks. | ✅  | ☐   | ☐          |
+| 4   | **Sense of Responsibility**         | Consistently maintained a stable work intensity, closely followed shared objectives, and exhibited high responsibility to ensure the project was completed on schedule. | ✅  | ☐   | ☐          |
+| 5   | **Discipline**                      | Fair level of discipline. However, occasionally still arrived late and had a tendency to pile up work close to the deadline before completing it. | ☐   | ✅  | ☐          |
+| 6   | **Progressive Attitude**            | Always open-minded, listening, and actively accepting feedback from admins. Possess a progressive mindset, constantly seeking ways to upgrade, improve, and optimize the project. | ✅  | ☐   | ☐          |
+| 7   | **Communication**                   | Communication skills are currently at an average level. The ability to convey information, express ideas, and present clearly to others is not yet very effective. | ☐   | ☐   | ✅         |
+| 8   | **Teamwork**                        | Skills in task division and team coordination are at an average level. Task allocation was uneven, leading to some members having to work significantly harder than others. | ☐   | ☐   | ✅         |
+| 9   | **Professional Conduct**            | Overall professional attitude is stable and moderate. However, occasionally still exhibited a slight lack of professionalism when interacting or working internally with team members. | ☐   | ✅  | ☐          |
+| 10  | **Problem-Solving Mindset**         | Analytical and debugging skills are at a fair level. Although a solution is eventually found, it often takes a considerable amount of time to resolve issues thoroughly. | ☐   | ✅  | ☐          |
+| 11  | **Contribution to the Project**     | Served as the primary person responsible for designing the infrastructure. Directly in charge of Cloud configuration to ensure the app runs smoothly on AWS, while actively participating in bug fixing, system development, and task assignment. | ✅  | ☐   | ☐          |
+| 12  | **Overall**                         | Successfully completed the internship playing a core role in infrastructure architecture. Achieved significant technical results, but there is a clear need to improve soft skills, personal discipline, and team management. | ☐   | ✅  | ☐          |
 
 ---
 
 ### What I Have Achieved During the Internship
 
 **Technical Learning:**
-* **Curing "Cloud Blindness":** Manually configured virtual networks (VPC), subnetting, and load balancers instead of merely learning theories on paper.
-* **Architectural Lessons:** Understood the harsh difference between code running smoothly on Localhost versus code crashing when thrown onto an EC2 instance (hidden behind a Private Subnet).
-* **Cost Awareness (FinOps):** Developed a healthy "fear of costs", learned how to clean up unused Snapshots, shut down idle NAT Gateways, and set up Billing Alarms.
+* **Mastering Cloud Architecture:** Directly assumed the main role in designing the infrastructure architecture. Proficient in configuring core services and well-acquainted with advanced AWS services.
+* **System Operations:** Took charge of configuring the Cloud and application to ensure the Pet Resort & Care System runs smoothly on the AWS environment. Actively participated in debugging and system development.
 
 **Attitude & Experience:**
-* **Community Engagement:** Attended 3 AWS technical events/meetups, expanding my network and getting exposed to large-scale problems faced by real enterprises.
-* **Documentation Discipline:** Maintained weekly Worklogs and learned how to package project documentation (even though it was time-consuming and sometimes tedious).
-* **Honesty with Myself:** Dared to face the reality that our system still risks crashing under heavy load spam, rather than writing a report with inflated results.
+* **Progressive Mindset:** Always maintained an open-minded attitude, actively receiving feedback from admins to continuously improve, upgrade, and optimize the project.
+* **Proactiveness:** Not only proactively learned new knowledge but also took a leading role in organizing meetings, dividing tasks, and maintaining a steady work intensity to ensure the project stayed on schedule.
 
 ---
 
 ### Limitations and Areas for Improvement
 
 **Technical Skills:**
-* **Code & Database Optimization Mindset:** The business logic code (e.g., cart handling, scheduling) is not yet optimal, still causing sync errors. I do not yet know how to properly index the Database for faster querying.
-* **Weak Troubleshooting:** When the system crashes, I often spend way too much time fumbling through CloudWatch Logs because I haven't learned how to set up centralized logging.
-* **Lack of CI/CD:** Deployments are still quite manual. The failure to integrate a professional automated CI/CD pipeline (like Jenkins or GitHub Actions) is a major shortcoming.
-* **Security:** Although we used IAM and Secrets Manager, out of fear of breaking the app, the team sometimes granted overly broad IAM Roles that violate the Least Privilege principle.
+* **Troubleshooting Speed:** Despite having the ability to analyze and find bugs (debug), the processing speed is still slow and it takes a lot of time to thoroughly resolve technical issues.
 
 **Soft Skills & Work Habits:**
-* **Communication and Presentation:** I tend to lose confidence and over-explain when mentors challenge my technical decisions (e.g., why choose this service over another).
-* **Time Management:** I often underestimate the time needed to fix a bug (thinking it takes 1 hour, but it actually takes a whole day), leading to last-minute sprints near the deadline.
-* **Patience:** Sometimes I am too eager to see immediate results (like forcing Auto Scaling to run instantly) without deeply understanding the underlying AWS configuration principles.
+* **Communication and Presentation:** Communication skills are only at an average level. Conveying ideas and technical information to team members is sometimes unclear and inefficient.
+* **Team Management and Coordination:** Task delegation skills are not very good, leading to an imbalance in workload (some members had to work harder than the rest).
+* **Personal Discipline & Conduct:** Occasionally violated discipline by arriving late or rushing tasks near the deadline. Sometimes, during collaborative work, a lack of professionalism with teammates was still evident.
 
-> **Conclusion:** This internship was like a "wake-up call" that helped me soberly realize exactly where I stand in the IT industry. What I have achieved is just the ABCs. The journey ahead requires me to study much more seriously, particularly focusing on Containerization (Docker), CI/CD automation, and advanced system design thinking.
+> **Conclusion:** This internship was an important stepping stone that helped me solidify my technical knowledge and validate my capabilities in Cloud infrastructure design. The shortcomings in soft skills, personal discipline, and team management experience are valuable real-world lessons that will help me clearly recognize and improve myself on the path to becoming a professional IT engineer.
