@@ -5,14 +5,6 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my 12-week internship at **AWS First Cloud Journey** (from April 2026 to July 2026), I had the opportunity to learn, practice, and experience the real-world challenges of applying cloud computing knowledge to software system deployment.
-
-I collaborated with a 5-member team to develop the **Pet Resort & Care System** project—a web application combining e-commerce and pet spa scheduling. The application was built using ReactJS and Spring Boot (Java) and deployed on AWS following a 3-Tier Architecture. We utilized core services such as VPC, EC2, Application Load Balancer, Amazon RDS (Multi-AZ), and ElastiCache (Redis). Through this project, I took my first steps in network infrastructure design, basic security configuration, and gained a deep awareness of cloud cost optimization (FinOps).
-
-Additionally, I participated in **3 community technical events** regarding Cloud Architecture, Voice AI, and Career Orientation. These events broadened my horizons and helped me clearly see the gap between academic knowledge and corporate reality.
-
-Reflecting on my journey, I acknowledge that the system we built is still at an MVP (Minimum Viable Product) stage, the codebase is not fully optimized, and there are still loopholes. To objectively reflect on my internship process, I would like to self-evaluate based on the following criteria:
-
 | No. | Criteria | Description | Good | Fair | Average |
 | --- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --- | --- | ---------- |
 | 1   | **Technical Knowledge and Skills**  | Mastered network infrastructure architecture and proficiently configured core AWS services. Have a good understanding and ability to apply several advanced cloud services. | ✅  | ☐   | ☐          |
