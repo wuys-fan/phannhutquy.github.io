@@ -10,7 +10,7 @@ pre: " <b> 4.3. </b> "
 ### Event Details
 - **Date**: Saturday, July 4, 2026
 - **Time**: 9:00 AM - 12:00 AM
-- **Location**: Ho Chi Minh City, Vietnam
+- **Location**: online - youtube
 - **Event Type**: Career Sharing, Tech Meetup, and Networking
 
 ### Event Objectives
