@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nhật ký công việc on Báo cáo thực tập</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/</link><description>Recent content in Nhật ký công việc on Báo cáo thực tập</description><generator>Hugo</generator><language>vi</language><atom:link href="https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/index.xml" rel="self" type="application/rss+xml"/><item><title>Nhật ký công việc - Tuần 1</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.1-week1/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.1-week1/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-1-nền-tảng-đám-mây--công-cụ-báo-cáo">Mục tiêu Tuần 1: Nền tảng Đám mây &amp;amp; Công cụ Báo cáo&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>17/04/2026&lt;/strong> đến &lt;strong>23/04/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Nền tảng Đám mây &amp;amp; Công cụ Báo cáo&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Tham gia buổi định hướng thực tập (Orientation), làm quen Mentor và thống nhất vai trò trong nhóm.&lt;/td>
+ &lt;td style="text-align: center">17/04/2026&lt;/td>
+ &lt;td style="text-align: center">17/04/2026&lt;/td>
+ &lt;td style="text-align: left">Quy chế thực tập FCJ&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Tìm hiểu lý thuyết Điện toán đám mây, phân biệt mô hình dịch vụ (IaaS, PaaS, SaaS) và lợi ích khi lên Cloud.&lt;/td>
+ &lt;td style="text-align: center">18/04/2026&lt;/td>
+ &lt;td style="text-align: center">18/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Cloud Practitioner Essentials&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Tạo tài khoản AWS Free Tier. Áp dụng Best Practices bảo mật: kích hoạt MFA cho Root, tạo IAM User có quyền Admin.&lt;/td>
+ &lt;td style="text-align: center">19/04/2026&lt;/td>
+ &lt;td style="text-align: center">20/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS IAM User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Cài đặt Hugo Static Site Generator trên môi trường local, chạy thử sườn website báo cáo tiến độ.&lt;/td>
+ &lt;td style="text-align: center">21/04/2026&lt;/td>
+ &lt;td style="text-align: center">21/04/2026&lt;/td>
+ &lt;td style="text-align: left">Hugo Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">5&lt;/td>
+ &lt;td style="text-align: left">Làm quen với các thao tác điều hướng cơ bản trên AWS Management Console qua 5 bài thực hành Lab.&lt;/td>
+ &lt;td style="text-align: center">22/04/2026&lt;/td>
+ &lt;td style="text-align: center">22/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Console Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">6&lt;/td>
+ &lt;td style="text-align: left">Đọc tài liệu về quản lý chi phí AWS Billing và thiết lập cảnh báo ngân sách cơ bản để kiểm soát tài khoản.&lt;/td>
+ &lt;td style="text-align: center">23/04/2026&lt;/td>
+ &lt;td style="text-align: center">23/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Billing Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Hiểu rõ bức tranh tổng quan về điện toán đám mây và hệ sinh thái AWS.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Hoàn tất cấu hình bảo mật cơ bản tài khoản để tránh rò rỉ thông tin hoặc phát sinh chi phí.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Khởi chạy thành công website báo cáo Hugo trên localhost.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 2</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.2-week2/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.2-week2/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-2-quản-lý-quyền-truy-cập-với-aws-iam">Mục tiêu Tuần 2: Quản lý Quyền truy cập với AWS IAM&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>24/04/2026&lt;/strong> đến &lt;strong>30/04/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Quản lý Quyền truy cập với AWS IAM&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu sâu cơ chế hoạt động của AWS Identity and Access Management (IAM), vòng đời đánh giá Policy.&lt;/td>
+ &lt;td style="text-align: center">24/04/2026&lt;/td>
+ &lt;td style="text-align: center">25/04/2026&lt;/td>
+ &lt;td style="text-align: left">IAM Policies Overview&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Thực hành tạo Customer Managed Policy sử dụng cấu trúc JSON, áp dụng nguyên tắc phân quyền tối thiểu (Least Privilege).&lt;/td>
+ &lt;td style="text-align: center">26/04/2026&lt;/td>
+ &lt;td style="text-align: center">27/04/2026&lt;/td>
+ &lt;td style="text-align: left">IAM JSON Policy Reference&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Tìm hiểu IAM Role và cơ chế gán quyền tạm thời (Temporary Credentials) cho các tài nguyên AWS.&lt;/td>
+ &lt;td style="text-align: center">28/04/2026&lt;/td>
+ &lt;td style="text-align: center">28/04/2026&lt;/td>
+ &lt;td style="text-align: left">IAM Roles Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Biên dịch bài viết kỹ thuật AWS Blog đầu tiên liên quan đến quản lý danh tính và bảo mật quyền truy cập trên AWS.&lt;/td>
+ &lt;td style="text-align: center">29/04/2026&lt;/td>
+ &lt;td style="text-align: center">30/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Blogs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Làm chủ cách viết Policy bằng cú pháp JSON.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Hiểu sự khác biệt giữa IAM User, Group và IAM Role.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Hoàn tất bản dịch kỹ thuật chất lượng đầu tiên để xuất bản lên blog.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 3</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.3-week3/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.3-week3/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-3-hạ-tầng-mạng-cơ-sở-amazon-vpc">Mục tiêu Tuần 3: Hạ tầng Mạng cơ sở Amazon VPC&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>01/05/2026&lt;/strong> đến &lt;strong>08/05/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Hạ tầng Mạng cơ sở Amazon VPC&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu các thành phần mạng ảo Amazon VPC: CIDR block, Subnetting, Route Table, Internet Gateway (IGW).&lt;/td>
+ &lt;td style="text-align: center">01/05/2026&lt;/td>
+ &lt;td style="text-align: center">03/05/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon VPC User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Thiết kế sơ đồ chia IP Subnet cho dự án Pet Shop: 2 Public Subnets và 2 Private Subnets trải rộng trên 2 Availability Zones.&lt;/td>
+ &lt;td style="text-align: center">04/05/2026&lt;/td>
+ &lt;td style="text-align: center">05/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC CIDR Calculation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Thực hành tạo VPC trên AWS Console, khởi tạo các Subnets và đính kèm Internet Gateway để mở cổng đi ra ngoài.&lt;/td>
+ &lt;td style="text-align: center">06/05/2026&lt;/td>
+ &lt;td style="text-align: center">07/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Console Hands-on&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Cấu hình Route Tables: Tạo Public Route Table liên kết với IGW để biến Subnets được chọn thành Public Subnets.&lt;/td>
+ &lt;td style="text-align: center">08/05/2026&lt;/td>
+ &lt;td style="text-align: center">08/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Route Tables Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Hiểu sâu về chia mạng IP subnetting.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tự thiết kế và cấu hình hoàn chỉnh mạng ảo VPC có kết nối Internet.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Phân định rõ ràng ranh giới giữa Public Subnet (ngoài) và Private Subnet (trong).&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 4</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.4-week4/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.4-week4/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-4-giao-tiếp-mạng-nâng-cao--định-tuyến-an-toàn">Mục tiêu Tuần 4: Giao tiếp Mạng nâng cao &amp;amp; Định tuyến an toàn&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>09/05/2026&lt;/strong> đến &lt;strong>17/05/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Giao tiếp Mạng nâng cao &amp;amp; Định tuyến an toàn&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu NAT Gateway. Thực hành tạo NAT Gateway ở Public Subnet và cấu hình định tuyến cho Private Route Table.&lt;/td>
+ &lt;td style="text-align: center">09/05/2026&lt;/td>
+ &lt;td style="text-align: center">11/05/2026&lt;/td>
+ &lt;td style="text-align: left">NAT Gateway Documentation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">So sánh NAT Gateway với NAT Instance về khả năng mở rộng, quản lý và tối ưu hóa chi phí thực tế.&lt;/td>
+ &lt;td style="text-align: center">12/05/2026&lt;/td>
+ &lt;td style="text-align: center">13/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC NAT Comparison&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Tìm hiểu VPC Endpoints. Thực hành tạo Gateway Endpoint kết nối an toàn từ Private Subnet tới S3 mà không cần qua NAT Gateway.&lt;/td>
+ &lt;td style="text-align: center">14/05/2026&lt;/td>
+ &lt;td style="text-align: center">15/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Endpoints Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu cơ chế bảo mật mạng: Phân biệt Security Groups (Stateful) và Network ACLs (Stateless).&lt;/td>
+ &lt;td style="text-align: center">16/05/2026&lt;/td>
+ &lt;td style="text-align: center">17/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Security Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Thiết lập định tuyến ra ngoài Internet cho Private Subnet thông qua NAT Gateway bảo mật.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tối ưu chi phí băng thông bằng VPC Endpoints.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Làm chủ cách cấu hình Security Groups để bảo vệ server.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 5</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.5-week5/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.5-week5/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-5-lưu-trữ-đám-mây-với-amazon-s3">Mục tiêu Tuần 5: Lưu trữ Đám mây với Amazon S3&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>18/05/2026&lt;/strong> đến &lt;strong>24/05/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Lưu trữ Đám mây với Amazon S3&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Tìm hiểu Amazon S3, các khái niệm Bucket, Object, Permissions và các lớp lưu trữ (Storage Classes).&lt;/td>
+ &lt;td style="text-align: center">18/05/2026&lt;/td>
+ &lt;td style="text-align: center">19/05/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon S3 Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Thực hành tạo Bucket, kích hoạt Static Website Hosting để chuẩn bị triển khai Frontend ReactJS.&lt;/td>
+ &lt;td style="text-align: center">20/05/2026&lt;/td>
+ &lt;td style="text-align: center">21/05/2026&lt;/td>
+ &lt;td style="text-align: left">S3 Static Website Hosting&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Cấu hình S3 CORS Policy để cho phép API Backend gọi tài nguyên tĩnh. Thiết lập S3 Bucket Policy cho phép truy cập đọc công khai.&lt;/td>
+ &lt;td style="text-align: center">22/05/2026&lt;/td>
+ &lt;td style="text-align: center">22/05/2026&lt;/td>
+ &lt;td style="text-align: left">S3 CORS &amp;amp; Policies Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu S3 Lifecycle Rules, thực hành tạo rule tự động chuyển đổi tệp tin lưu trữ sang S3 Glacier để tối ưu chi phí.&lt;/td>
+ &lt;td style="text-align: center">23/05/2026&lt;/td>
+ &lt;td style="text-align: center">24/05/2026&lt;/td>
+ &lt;td style="text-align: left">S3 Lifecycle Management&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Biết cách host trang web tĩnh trên Amazon S3.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Bảo mật quyền truy cập S3 qua CORS và Bucket Policies.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tối ưu chi phí lưu trữ nhờ cấu hình Lifecycle Rules.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 6</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.6-week6/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.6-week6/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-6-phân-phối-cdn-cloudfront--bảo-mật-biên-với-waf">Mục tiêu Tuần 6: Phân phối CDN CloudFront &amp;amp; Bảo mật biên với WAF&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>25/05/2026&lt;/strong> đến &lt;strong>01/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Phân phối CDN CloudFront &amp;amp; Bảo mật biên với WAF&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Tìm hiểu dịch vụ CDN Amazon CloudFront. Thực hành tạo CloudFront Distribution trỏ nguồn về S3 static web.&lt;/td>
+ &lt;td style="text-align: center">25/05/2026&lt;/td>
+ &lt;td style="text-align: center">27/05/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon CloudFront Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Cấu hình bảo mật CloudFront Origin Access Control (OAC) để chặn truy cập trực tiếp S3, bắt buộc đi qua CDN.&lt;/td>
+ &lt;td style="text-align: center">28/05/2026&lt;/td>
+ &lt;td style="text-align: center">29/05/2026&lt;/td>
+ &lt;td style="text-align: left">CloudFront OAC Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu AWS WAF (Web Application Firewall). Tạo Web ACL ngăn chặn SQL injection, Cross-Site Scripting (XSS).&lt;/td>
+ &lt;td style="text-align: center">30/05/2026&lt;/td>
+ &lt;td style="text-align: center">31/05/2026&lt;/td>
+ &lt;td style="text-align: left">AWS WAF Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Liên kết WAF Web ACL với CloudFront Distribution để hoàn thành tường lửa bảo vệ lớp biên.&lt;/td>
+ &lt;td style="text-align: center">01/06/2026&lt;/td>
+ &lt;td style="text-align: center">01/06/2026&lt;/td>
+ &lt;td style="text-align: left">WAF CloudFront Integration&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Tăng tốc độ tải trang web tĩnh thông qua mạng CDN toàn cầu.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Bảo mật hoàn chỉnh nguồn S3 bằng CloudFront OAC.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Thiết lập bộ lọc chặn các cuộc tấn công web phổ biến bằng AWS WAF.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 7</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.7-week7/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.7-week7/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-7-máy-chủ-ảo-amazon-ec2-cho-backend-api">Mục tiêu Tuần 7: Máy chủ ảo Amazon EC2 cho Backend API&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>02/06/2026&lt;/strong> đến &lt;strong>09/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Máy chủ ảo Amazon EC2 cho Backend API&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu Amazon EC2. So sánh Instance Types, cấu hình lưu trữ EBS (Elastic Block Store).&lt;/td>
+ &lt;td style="text-align: center">02/06/2026&lt;/td>
+ &lt;td style="text-align: center">03/06/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon EC2 User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Thực hành khởi tạo EC2 Instance chạy Amazon Linux 2023 đặt trong Private Subnet để đảm bảo an toàn.&lt;/td>
+ &lt;td style="text-align: center">04/06/2026&lt;/td>
+ &lt;td style="text-align: center">05/06/2026&lt;/td>
+ &lt;td style="text-align: left">EC2 Console Hands-on&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Thiết lập Security Group &lt;code>SG_Backend&lt;/code> chặn mọi truy cập trực tiếp từ Internet, chỉ mở cổng 8080 cho Load Balancer.&lt;/td>
+ &lt;td style="text-align: center">06/06/2026&lt;/td>
+ &lt;td style="text-align: center">07/06/2026&lt;/td>
+ &lt;td style="text-align: left">EC2 Security Groups Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Cài đặt môi trường ứng dụng: Kết nối an toàn qua AWS Systems Manager Session Manager, cài đặt Java Corretto 17.&lt;/td>
+ &lt;td style="text-align: center">08/06/2026&lt;/td>
+ &lt;td style="text-align: center">09/06/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Systems Manager User Guide&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Hiểu cách vận hành và lựa chọn cấu hình máy chủ EC2.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Triển khai EC2 an toàn trong Private Subnet không có IP public.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Quản trị máy chủ hoàn toàn thông qua Systems Manager, loại bỏ port SSH 22 truyền thống.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 8</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.8-week8/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.8-week8/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-8-cân-bằng-tải-alb--tự-động-co-giãn-ec2-auto-scaling">Mục tiêu Tuần 8: Cân bằng tải ALB &amp;amp; Tự động co giãn EC2 Auto Scaling&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>10/06/2026&lt;/strong> đến &lt;strong>17/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Cân bằng tải ALB &amp;amp; Tự động co giãn EC2 Auto Scaling&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Tìm hiểu Application Load Balancer (ALB). Cấu hình Target Group cho cổng 8080 và khởi tạo ALB trên Public Subnets.&lt;/td>
+ &lt;td style="text-align: center">10/06/2026&lt;/td>
+ &lt;td style="text-align: center">11/06/2026&lt;/td>
+ &lt;td style="text-align: left">ALB Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu cơ chế EC2 Auto Scaling. Thực hành tạo Launch Template chứa cấu hình máy chủ, AMI và kịch bản khởi động (User Data).&lt;/td>
+ &lt;td style="text-align: center">12/06/2026&lt;/td>
+ &lt;td style="text-align: center">14/06/2026&lt;/td>
+ &lt;td style="text-align: left">Launch Templates Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Thiết lập Auto Scaling Group (ASG) tích hợp cùng Target Group của ALB.&lt;/td>
+ &lt;td style="text-align: center">15/06/2026&lt;/td>
+ &lt;td style="text-align: center">16/06/2026&lt;/td>
+ &lt;td style="text-align: left">Auto Scaling Groups Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Cấu hình Scaling Policy tự động scale-out/scale-in dựa trên CPUUtilization: Desired 2, Min 2, Max 4.&lt;/td>
+ &lt;td style="text-align: center">17/06/2026&lt;/td>
+ &lt;td style="text-align: center">17/06/2026&lt;/td>
+ &lt;td style="text-align: left">ASG Dynamic Scaling Policies&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Hiểu cơ chế hoạt động của ALB để phân bổ tải Frontend-Backend.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tự thiết lập hệ thống tự động co giãn ASG.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Cấu hình User Data để tự cài ứng dụng Spring Boot khi khởi động instance mới.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 9</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.9-week9/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.9-week9/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-9-cơ-sở-dữ-liệu-amazon-rds--bộ-nhớ-đệm-elasticache">Mục tiêu Tuần 9: Cơ sở Dữ liệu Amazon RDS &amp;amp; Bộ nhớ đệm ElastiCache&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>18/06/2026&lt;/strong> đến &lt;strong>25/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Cơ sở Dữ liệu Amazon RDS &amp;amp; Bộ nhớ đệm ElastiCache&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu Amazon RDS. So sánh các mô hình triển khai Single-AZ vs Multi-AZ.&lt;/td>
+ &lt;td style="text-align: center">18/06/2026&lt;/td>
+ &lt;td style="text-align: center">19/06/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon RDS User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Khởi tạo RDS MySQL DB Instance chạy chế độ Multi-AZ (Primary/Standby) đặt trên Subnet Group riêng của Private Subnets.&lt;/td>
+ &lt;td style="text-align: center">20/06/2026&lt;/td>
+ &lt;td style="text-align: center">21/06/2026&lt;/td>
+ &lt;td style="text-align: left">RDS Multi-AZ Deployment&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Thiết lập Security Group của Database chỉ cho phép kết nối ở cổng 3306 từ Security Group &lt;code>SG_Backend&lt;/code> của EC2.&lt;/td>
+ &lt;td style="text-align: center">22/06/2026&lt;/td>
+ &lt;td style="text-align: center">23/06/2026&lt;/td>
+ &lt;td style="text-align: left">RDS Security Groups Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Tìm hiểu Amazon ElastiCache. Khởi tạo một Redis cluster chạy trong Private Subnet để lưu cache danh mục sản phẩm của Pet Shop.&lt;/td>
+ &lt;td style="text-align: center">24/06/2026&lt;/td>
+ &lt;td style="text-align: center">25/06/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon ElastiCache Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Hiểu và cấu hình RDS Multi-AZ để tăng độ tin cậy của dữ liệu.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Bảo mật lớp cơ sở dữ liệu ở mức tối đa bằng Security Groups.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tích hợp bộ nhớ đệm Redis để tăng hiệu năng đọc của ứng dụng.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 10</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.10-week10/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.10-week10/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-10-giám-sát-hệ-thống--bảo-mật-thông-tin-cấu-hình">Mục tiêu Tuần 10: Giám sát Hệ thống &amp;amp; Bảo mật thông tin cấu hình&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>26/06/2026&lt;/strong> đến &lt;strong>02/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Giám sát Hệ thống &amp;amp; Bảo mật thông tin cấu hình&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Nghiên cứu AWS KMS (Key Management Service). Tạo Customer Managed Key để mã hóa EBS volume và các thông tin cấu hình.&lt;/td>
+ &lt;td style="text-align: center">26/06/2026&lt;/td>
+ &lt;td style="text-align: center">27/06/2026&lt;/td>
+ &lt;td style="text-align: left">AWS KMS Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Lưu trữ bảo mật Database credentials, URL kết nối trong AWS Secrets Manager.&lt;/td>
+ &lt;td style="text-align: center">28/06/2026&lt;/td>
+ &lt;td style="text-align: center">28/06/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Secrets Manager Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Cấu hình Amazon CloudWatch. Tạo Dashboard theo dõi RAM, CPU, Request count của ALB và CPU EC2.&lt;/td>
+ &lt;td style="text-align: center">29/06/2026&lt;/td>
+ &lt;td style="text-align: center">30/06/2026&lt;/td>
+ &lt;td style="text-align: left">CloudWatch Metrics Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Cấu hình CloudWatch Alarm và tích hợp với Amazon SNS gửi email cảnh báo tự động khi CPU vượt quá 80%.&lt;/td>
+ &lt;td style="text-align: center">01/07/2026&lt;/td>
+ &lt;td style="text-align: center">02/07/2026&lt;/td>
+ &lt;td style="text-align: left">CloudWatch Alarm with SNS&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Biết cách mã hóa dữ liệu tĩnh và dữ liệu nhạy cảm trên Cloud.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Thiết lập bảng theo dõi giám sát hệ thống thời gian thực.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tự động gửi cảnh báo khẩn cấp khi hạ tầng quá tải.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 11</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.11-week11/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.11-week11/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-11-thiết-kế-kiến-trúc-hệ-thống--lập-kịch-bản-luồng-dữ-liệu">Mục tiêu Tuần 11: Thiết kế Kiến trúc Hệ thống &amp;amp; Lập kịch bản luồng dữ liệu&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>03/07/2026&lt;/strong> đến &lt;strong>10/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Thiết kế Kiến trúc Hệ thống &amp;amp; Lập kịch bản luồng dữ liệu&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Tổng hợp lại các dịch vụ AWS đã học trong Giai đoạn 1. Phác thảo kiến trúc 3 lớp an toàn, chịu tải cho Pet Resort &amp;amp; Care System.&lt;/td>
+ &lt;td style="text-align: center">03/07/2026&lt;/td>
+ &lt;td style="text-align: center">05/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Architecture Center&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Sử dụng Draw.io vẽ sơ đồ kiến trúc chi tiết, thể hiện rõ ràng các subnet, Security Groups, IAM Roles và các kết nối mạng.&lt;/td>
+ &lt;td style="text-align: center">06/07/2026&lt;/td>
+ &lt;td style="text-align: center">07/07/2026&lt;/td>
+ &lt;td style="text-align: left">Draw.io AWS 3D Template&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Lập tài liệu kịch bản luồng kết nối dữ liệu chi tiết giữa các tầng (Frontend -&amp;gt; CloudFront -&amp;gt; ALB -&amp;gt; EC2 Backend -&amp;gt; RDS/Redis).&lt;/td>
+ &lt;td style="text-align: center">08/07/2026&lt;/td>
+ &lt;td style="text-align: center">09/07/2026&lt;/td>
+ &lt;td style="text-align: left">Data Flow Design&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Lập báo cáo Đề xuất Dự án (Project Proposal), ước tính chi phí hàng tháng của hệ thống bằng AWS Pricing Calculator.&lt;/td>
+ &lt;td style="text-align: center">10/07/2026&lt;/td>
+ &lt;td style="text-align: center">10/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Pricing Calculator&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Hoàn thiện bản vẽ thiết kế kiến trúc hệ thống chuyên nghiệp theo chuẩn AWS.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Làm rõ luồng giao tiếp dữ liệu nội bộ giữa các Subnets.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Ước lượng ngân sách tối ưu cho dự án.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Nhật ký công việc - Tuần 12</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.12-week12/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.12-week12/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-12-triển-khai-hệ-thống-đa-tầng-lên-môi-trường-cloud-thực-tế">Mục tiêu Tuần 12: Triển khai hệ thống đa tầng lên môi trường Cloud thực tế&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>11/07/2026&lt;/strong> đến &lt;strong>20/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>Triển khai hệ thống đa tầng lên môi trường Cloud thực tế&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Triển khai hạ tầng cơ sở: Tạo VPC, chia Subnets, tạo Internet Gateway, NAT Gateway, cấu hình Route Tables và Security Groups.&lt;/td>
+ &lt;td style="text-align: center">11/07/2026&lt;/td>
+ &lt;td style="text-align: center">12/07/2026&lt;/td>
+ &lt;td style="text-align: left">Infrastructure-as-Code Basics&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Deploy Frontend: Đóng gói code ReactJS thành file tĩnh, upload lên S3 Bucket, tạo CloudFront Distribution tích hợp AWS WAF.&lt;/td>
+ &lt;td style="text-align: center">13/07/2026&lt;/td>
+ &lt;td style="text-align: center">14/07/2026&lt;/td>
+ &lt;td style="text-align: left">S3 &amp;amp; CloudFront Deployment&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Triển khai Database RDS MySQL Multi-AZ và ElastiCache Redis cluster trên Private Subnets.&lt;/td>
+ &lt;td style="text-align: center">15/07/2026&lt;/td>
+ &lt;td style="text-align: center">16/07/2026&lt;/td>
+ &lt;td style="text-align: left">RDS &amp;amp; Redis Provisioning&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Deploy Backend: Khởi chạy máy chủ EC2 gốc, cấu hình ứng dụng Spring Boot Backend, kết nối Database RDS và cache Redis.&lt;/td>
+ &lt;td style="text-align: center">17/07/2026&lt;/td>
+ &lt;td style="text-align: center">17/07/2026&lt;/td>
+ &lt;td style="text-align: left">Spring Boot EC2 Setup&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">5&lt;/td>
+ &lt;td style="text-align: left">Tạo Amazon Machine Image (AMI) từ EC2 Backend gốc. Tạo Launch Template sử dụng AMI này và thiết lập Auto Scaling Group.&lt;/td>
+ &lt;td style="text-align: center">18/07/2026&lt;/td>
+ &lt;td style="text-align: center">19/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS EC2 AMI Creation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">6&lt;/td>
+ &lt;td style="text-align: left">Khởi tạo Application Load Balancer, liên kết với Target Group của Auto Scaling Group. Cấu hình CORS và DNS kết nối Frontend-Backend.&lt;/td>
+ &lt;td style="text-align: center">20/07/2026&lt;/td>
+ &lt;td style="text-align: center">20/07/2026&lt;/td>
+ &lt;td style="text-align: left">ALB Routing Setup&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Triển khai hoạt động thành công hệ thống đa tầng bảo mật trên Cloud.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tự động hóa cấu hình môi trường khởi tạo thông qua AMI và Launch Template.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tích hợp kết nối Frontend và Backend an toàn qua HTTPS.&lt;/strong>&lt;/li>
+&lt;/ul></description></item></channel></rss>

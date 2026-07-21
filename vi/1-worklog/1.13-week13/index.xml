@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Worklog Tuần 13 on Báo cáo thực tập</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.13-week13/</link><description>Recent content in Worklog Tuần 13 on Báo cáo thực tập</description><generator>Hugo</generator><language>vi</language><atom:link href="https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.13-week13/index.xml" rel="self" type="application/rss+xml"/><item><title>Nhật ký công việc - Tuần 13</title><link>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.13-week13/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/vi/1-worklog/1.13-week13/_index2/</guid><description>&lt;h3 id="mục-tiêu-tuần-13-qa-kiểm-thử-tải-load-test-vá-lỗi-bảo-mật--tổng-kết-dự-án">Mục tiêu Tuần 13: QA Kiểm thử tải (Load Test), Vá lỗi bảo mật &amp;amp; Tổng kết dự án&lt;/h3>
+&lt;ul>
+&lt;li>Khoảng thời gian: từ &lt;strong>21/07/2026&lt;/strong> đến &lt;strong>30/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Nội dung chính: Học tập và thực hiện các nhiệm vụ liên quan đến &lt;strong>QA Kiểm thử tải (Load Test), Vá lỗi bảo mật &amp;amp; Tổng kết dự án&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Ngày&lt;/th>
+ &lt;th style="text-align: left">Các công việc &amp;amp; Nhiệm vụ đã thực hiện&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày kết thúc&lt;/th>
+ &lt;th style="text-align: left">Tài liệu tham khảo&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Thực hiện kiểm thử QA các tính năng đặt lịch spa, mua hàng trên giao diện Frontend đã deploy.&lt;/td>
+ &lt;td style="text-align: center">21/07/2026&lt;/td>
+ &lt;td style="text-align: center">22/07/2026&lt;/td>
+ &lt;td style="text-align: left">Functional Testing Tools&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Thiết lập kịch bản load test bằng công cụ Artillery. Chạy thử nghiệm mô phỏng 100 người dùng truy cập API đồng thời.&lt;/td>
+ &lt;td style="text-align: center">23/07/2026&lt;/td>
+ &lt;td style="text-align: center">24/07/2026&lt;/td>
+ &lt;td style="text-align: left">Artillery Load Testing Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Phân tích đồ thị hiệu năng CloudWatch, phát hiện lỗi nghẽn cổ chai DB Connection Pool và lỗi Gateway Timeout 504. Điều chỉnh tăng DB pool size và ALB timeout.&lt;/td>
+ &lt;td style="text-align: center">25/07/2026&lt;/td>
+ &lt;td style="text-align: center">26/07/2026&lt;/td>
+ &lt;td style="text-align: left">CloudWatch Performance Tuning&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Thực hành FinOps: Đánh giá chi phí thực tế phát sinh, thu nhỏ kích thước RDS/EC2 nhàn rỗi, dọn dẹp các tài nguyên không dùng để tránh lãng phí.&lt;/td>
+ &lt;td style="text-align: center">27/07/2026&lt;/td>
+ &lt;td style="text-align: center">28/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Cost Optimization Practices&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">5&lt;/td>
+ &lt;td style="text-align: left">Hoàn thành biên dịch và tổng kết toàn bộ báo cáo thực tập 13 tuần. Đóng gói mã nguồn và xuất bản bản phát hành Final ổn định.&lt;/td>
+ &lt;td style="text-align: center">29/07/2026&lt;/td>
+ &lt;td style="text-align: center">30/07/2026&lt;/td>
+ &lt;td style="text-align: left">Project Final Release Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Xác minh khả năng chịu lỗi và chịu tải cao của hệ thống.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Tối ưu hóa hóa đơn chi phí AWS (FinOps) đạt mức tiết kiệm tốt nhất.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Hoàn thành xuất sắc toàn bộ hồ sơ báo cáo thực tập.&lt;/strong>&lt;/li>
+&lt;/ul></description></item></channel></rss>

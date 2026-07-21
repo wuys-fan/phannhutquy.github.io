@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Phan Nhut Quy - Internship Report on Internship Report</title><link>https://wuys-fan.github.io/phannhutquy.github.io/</link><description>Recent content in Phan Nhut Quy - Internship Report on Internship Report</description><generator>Hugo</generator><language>en</language><atom:link href="https://wuys-fan.github.io/phannhutquy.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Worklog - Week 1</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.1-week1/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.1-week1/_index2/</guid><description>&lt;h3 id="week-1-objectives-cloud-foundations--reporting-tools">Week 1 Objectives: Cloud Foundations &amp;amp; Reporting Tools&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>17/04/2026&lt;/strong> to &lt;strong>23/04/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Cloud Foundations &amp;amp; Reporting Tools&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Attend internship orientation, meet Mentors, and align team roles.&lt;/td>
+ &lt;td style="text-align: center">17/04/2026&lt;/td>
+ &lt;td style="text-align: center">17/04/2026&lt;/td>
+ &lt;td style="text-align: left">FCJ Internship Guidelines&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Study Cloud Computing theory, differentiate service models (IaaS, PaaS, SaaS) and benefits of cloud migration.&lt;/td>
+ &lt;td style="text-align: center">18/04/2026&lt;/td>
+ &lt;td style="text-align: center">18/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Cloud Practitioner Essentials&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Create AWS Free Tier account. Apply security best practices: enable MFA for Root, create IAM Admin User.&lt;/td>
+ &lt;td style="text-align: center">19/04/2026&lt;/td>
+ &lt;td style="text-align: center">20/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS IAM User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Install Hugo Static Site Generator locally, run the template reporting website.&lt;/td>
+ &lt;td style="text-align: center">21/04/2026&lt;/td>
+ &lt;td style="text-align: center">21/04/2026&lt;/td>
+ &lt;td style="text-align: left">Hugo Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">5&lt;/td>
+ &lt;td style="text-align: left">Get familiar with AWS Management Console navigation and complete 5 basic console labs.&lt;/td>
+ &lt;td style="text-align: center">22/04/2026&lt;/td>
+ &lt;td style="text-align: center">22/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Console Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">6&lt;/td>
+ &lt;td style="text-align: left">Read about AWS Billing management and set up basic budget alerts to control account spending.&lt;/td>
+ &lt;td style="text-align: center">23/04/2026&lt;/td>
+ &lt;td style="text-align: center">23/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Billing Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Understand the overall cloud computing landscape and the AWS ecosystem.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Complete basic account security configurations to prevent credential leaks or cost anomalies.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Successfully run the Hugo reporting website on localhost.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 2</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.2-week2/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.2-week2/_index2/</guid><description>&lt;h3 id="week-2-objectives-access-control--authorization-with-aws-iam">Week 2 Objectives: Access Control &amp;amp; Authorization with AWS IAM&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>24/04/2026&lt;/strong> to &lt;strong>30/04/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Access Control &amp;amp; Authorization with AWS IAM&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study AWS Identity and Access Management (IAM) mechanics and Policy evaluation logic.&lt;/td>
+ &lt;td style="text-align: center">24/04/2026&lt;/td>
+ &lt;td style="text-align: center">25/04/2026&lt;/td>
+ &lt;td style="text-align: left">IAM Policies Overview&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Practice creating Customer Managed Policies using JSON, applying the Principle of Least Privilege.&lt;/td>
+ &lt;td style="text-align: center">26/04/2026&lt;/td>
+ &lt;td style="text-align: center">27/04/2026&lt;/td>
+ &lt;td style="text-align: left">IAM JSON Policy Reference&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Learn IAM Roles and temporary credential mechanisms for AWS resources.&lt;/td>
+ &lt;td style="text-align: center">28/04/2026&lt;/td>
+ &lt;td style="text-align: center">28/04/2026&lt;/td>
+ &lt;td style="text-align: left">IAM Roles Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Translate the first technical AWS Blog post related to identity management and access control security.&lt;/td>
+ &lt;td style="text-align: center">29/04/2026&lt;/td>
+ &lt;td style="text-align: center">30/04/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Blogs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Master writing custom IAM policies using JSON syntax.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Understand the differences between IAM Users, Groups, and IAM Roles.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Complete the first high-quality technical translation for blog publication.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 3</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.3-week3/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.3-week3/_index2/</guid><description>&lt;h3 id="week-3-objectives-vpc-network-infrastructure-basics">Week 3 Objectives: VPC Network Infrastructure Basics&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>01/05/2026&lt;/strong> to &lt;strong>08/05/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>VPC Network Infrastructure Basics&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study Amazon VPC components: CIDR blocks, Subnetting, Route Tables, Internet Gateways (IGW).&lt;/td>
+ &lt;td style="text-align: center">01/05/2026&lt;/td>
+ &lt;td style="text-align: center">03/05/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon VPC User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Design IP subnetting layout for Pet Shop project: 2 Public and 2 Private Subnets across 2 Availability Zones.&lt;/td>
+ &lt;td style="text-align: center">04/05/2026&lt;/td>
+ &lt;td style="text-align: center">05/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC CIDR Calculation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Create VPC on AWS Console, provision Subnets and attach Internet Gateway.&lt;/td>
+ &lt;td style="text-align: center">06/05/2026&lt;/td>
+ &lt;td style="text-align: center">07/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Console Hands-on&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Configure Route Tables: Associate Public Subnets with Route Table pointing to IGW.&lt;/td>
+ &lt;td style="text-align: center">08/05/2026&lt;/td>
+ &lt;td style="text-align: center">08/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Route Tables Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Gain deep understanding of IP subnetting calculations.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Independently design and deploy a custom VPC with internet connectivity.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Clearly define the boundary between Public and Private subnets.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 4</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.4-week4/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.4-week4/_index2/</guid><description>&lt;h3 id="week-4-objectives-advanced-routing--traffic-flow-control">Week 4 Objectives: Advanced Routing &amp;amp; Traffic Flow Control&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>09/05/2026&lt;/strong> to &lt;strong>17/05/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Advanced Routing &amp;amp; Traffic Flow Control&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study NAT Gateway. Create a NAT Gateway in the Public Subnet and configure routing for Private Route Tables.&lt;/td>
+ &lt;td style="text-align: center">09/05/2026&lt;/td>
+ &lt;td style="text-align: center">11/05/2026&lt;/td>
+ &lt;td style="text-align: left">NAT Gateway Documentation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Compare NAT Gateway with NAT Instance on scalability, management, and real cost optimization.&lt;/td>
+ &lt;td style="text-align: center">12/05/2026&lt;/td>
+ &lt;td style="text-align: center">13/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC NAT Comparison&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Learn VPC Endpoints. Create a Gateway Endpoint to allow private EC2 instance to access S3 directly.&lt;/td>
+ &lt;td style="text-align: center">14/05/2026&lt;/td>
+ &lt;td style="text-align: center">15/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Endpoints Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Study network security controls: Differentiate Security Groups (Stateful) and Network ACLs (Stateless).&lt;/td>
+ &lt;td style="text-align: center">16/05/2026&lt;/td>
+ &lt;td style="text-align: center">17/05/2026&lt;/td>
+ &lt;td style="text-align: left">VPC Security Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Configure outbound Internet routing for Private Subnet via secure NAT Gateway.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Optimize data transfer costs using S3 Gateway Endpoint.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Master configuring Security Groups to secure instances.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 5</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.5-week5/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.5-week5/_index2/</guid><description>&lt;h3 id="week-5-objectives-cloud-storage-with-amazon-s3">Week 5 Objectives: Cloud Storage with Amazon S3&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>18/05/2026&lt;/strong> to &lt;strong>24/05/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Cloud Storage with Amazon S3&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study Amazon S3, Buckets, Objects, Permissions, and S3 Storage Classes.&lt;/td>
+ &lt;td style="text-align: center">18/05/2026&lt;/td>
+ &lt;td style="text-align: center">19/05/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon S3 Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Create S3 Bucket, configure Static Website Hosting to prepare for ReactJS Frontend hosting.&lt;/td>
+ &lt;td style="text-align: center">20/05/2026&lt;/td>
+ &lt;td style="text-align: center">21/05/2026&lt;/td>
+ &lt;td style="text-align: left">S3 Static Website Hosting&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Configure S3 CORS Policies to allow cross-origin requests. Apply public read S3 Bucket Policy.&lt;/td>
+ &lt;td style="text-align: center">22/05/2026&lt;/td>
+ &lt;td style="text-align: center">22/05/2026&lt;/td>
+ &lt;td style="text-align: left">S3 CORS &amp;amp; Policies Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Study S3 Lifecycle Rules, configure automatic archiving rules to S3 Glacier to minimize storage cost.&lt;/td>
+ &lt;td style="text-align: center">23/05/2026&lt;/td>
+ &lt;td style="text-align: center">24/05/2026&lt;/td>
+ &lt;td style="text-align: left">S3 Lifecycle Management&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Learn how to host a static website on Amazon S3.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Secure S3 bucket access using CORS and Bucket Policies.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Optimize storage costs by configuring S3 Lifecycle Rules.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 6</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.6-week6/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.6-week6/_index2/</guid><description>&lt;h3 id="week-6-objectives-cdn-distribution--edge-protection-with-waf">Week 6 Objectives: CDN Distribution &amp;amp; Edge Protection with WAF&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>25/05/2026&lt;/strong> to &lt;strong>01/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>CDN Distribution &amp;amp; Edge Protection with WAF&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study CDN service Amazon CloudFront. Create a CloudFront Distribution with S3 as the origin.&lt;/td>
+ &lt;td style="text-align: center">25/05/2026&lt;/td>
+ &lt;td style="text-align: center">27/05/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon CloudFront Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Configure Origin Access Control (OAC) to restrict direct S3 bucket access and enforce CDN-only routing.&lt;/td>
+ &lt;td style="text-align: center">28/05/2026&lt;/td>
+ &lt;td style="text-align: center">29/05/2026&lt;/td>
+ &lt;td style="text-align: left">CloudFront OAC Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Study AWS WAF (Web Application Firewall). Create a Web ACL to block SQL injection and Cross-Site Scripting (XSS) attacks.&lt;/td>
+ &lt;td style="text-align: center">30/05/2026&lt;/td>
+ &lt;td style="text-align: center">31/05/2026&lt;/td>
+ &lt;td style="text-align: left">AWS WAF Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Associate WAF Web ACL with CloudFront Distribution to secure edge traffic flow.&lt;/td>
+ &lt;td style="text-align: center">01/06/2026&lt;/td>
+ &lt;td style="text-align: center">01/06/2026&lt;/td>
+ &lt;td style="text-align: left">WAF CloudFront Integration&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Accelerate static site loading times globally using CloudFront CDN.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Complete origin protection for S3 using CloudFront OAC.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Enforce security rules against common web vulnerabilities via AWS WAF.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 7</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.7-week7/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.7-week7/_index2/</guid><description>&lt;h3 id="week-7-objectives-virtual-servers-with-amazon-ec2">Week 7 Objectives: Virtual Servers with Amazon EC2&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>02/06/2026&lt;/strong> to &lt;strong>09/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Virtual Servers with Amazon EC2&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Learn Amazon EC2. Compare Instance Types and study EBS volume storage.&lt;/td>
+ &lt;td style="text-align: center">02/06/2026&lt;/td>
+ &lt;td style="text-align: center">03/06/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon EC2 User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Provision EC2 Instance running Amazon Linux 2023 placed inside the Private Subnet.&lt;/td>
+ &lt;td style="text-align: center">04/06/2026&lt;/td>
+ &lt;td style="text-align: center">05/06/2026&lt;/td>
+ &lt;td style="text-align: left">EC2 Console Hands-on&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Configure Security Group &lt;code>SG_Backend&lt;/code> restricting direct internet access, opening only port 8080 to the ALB.&lt;/td>
+ &lt;td style="text-align: center">06/06/2026&lt;/td>
+ &lt;td style="text-align: center">07/06/2026&lt;/td>
+ &lt;td style="text-align: left">EC2 Security Groups Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Set up application environment: Connect via Systems Manager Session Manager, install Amazon Corretto 17.&lt;/td>
+ &lt;td style="text-align: center">08/06/2026&lt;/td>
+ &lt;td style="text-align: center">09/06/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Systems Manager User Guide&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Understand EC2 instance lifecycle, types, and storage.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Deploy secure EC2 instance in a Private Subnet without public IP addresses.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Eliminate SSH port 22 access by leveraging AWS Systems Manager Session Manager.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 8</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.8-week8/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.8-week8/_index2/</guid><description>&lt;h3 id="week-8-objectives-load-balancing--auto-scaling">Week 8 Objectives: Load Balancing &amp;amp; Auto Scaling&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>10/06/2026&lt;/strong> to &lt;strong>17/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Load Balancing &amp;amp; Auto Scaling&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study Application Load Balancer (ALB). Create a Target Group for port 8080 and provision ALB in Public Subnets.&lt;/td>
+ &lt;td style="text-align: center">10/06/2026&lt;/td>
+ &lt;td style="text-align: center">11/06/2026&lt;/td>
+ &lt;td style="text-align: left">ALB Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Research EC2 Auto Scaling. Create a Launch Template storing instance type, custom AMI, and User Data script.&lt;/td>
+ &lt;td style="text-align: center">12/06/2026&lt;/td>
+ &lt;td style="text-align: center">14/06/2026&lt;/td>
+ &lt;td style="text-align: left">Launch Templates Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Provision Auto Scaling Group (ASG) integrated with the ALB Target Group.&lt;/td>
+ &lt;td style="text-align: center">15/06/2026&lt;/td>
+ &lt;td style="text-align: center">16/06/2026&lt;/td>
+ &lt;td style="text-align: left">Auto Scaling Groups Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Configure Target Tracking Scaling Policy on CPUUtilization: Desired 2, Min 2, Max 4.&lt;/td>
+ &lt;td style="text-align: center">17/06/2026&lt;/td>
+ &lt;td style="text-align: center">17/06/2026&lt;/td>
+ &lt;td style="text-align: left">ASG Dynamic Scaling Policies&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Understand ALB request routing and distribution.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Configure highly resilient Auto Scaling Group architectures.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Use EC2 User Data to bootstrap Spring Boot applications automatically on scaling events.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 9</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.9-week9/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.9-week9/_index2/</guid><description>&lt;h3 id="week-9-objectives-relational-databases--cache-clusters">Week 9 Objectives: Relational Databases &amp;amp; Cache Clusters&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>18/06/2026&lt;/strong> to &lt;strong>25/06/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Relational Databases &amp;amp; Cache Clusters&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study Amazon RDS. Compare Single-AZ vs Multi-AZ deployment models.&lt;/td>
+ &lt;td style="text-align: center">18/06/2026&lt;/td>
+ &lt;td style="text-align: center">19/06/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon RDS User Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Provision a MySQL Database Instance running in Multi-AZ (Primary/Standby) on a Private Subnet Group.&lt;/td>
+ &lt;td style="text-align: center">20/06/2026&lt;/td>
+ &lt;td style="text-align: center">21/06/2026&lt;/td>
+ &lt;td style="text-align: left">RDS Multi-AZ Deployment&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Configure Database Security Groups to allow port 3306 connection only from &lt;code>SG_Backend&lt;/code> EC2 instances.&lt;/td>
+ &lt;td style="text-align: center">22/06/2026&lt;/td>
+ &lt;td style="text-align: center">23/06/2026&lt;/td>
+ &lt;td style="text-align: left">RDS Security Groups Docs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Learn Amazon ElastiCache. Launch a Redis cluster inside Private Subnets to store cached data for the Pet Shop.&lt;/td>
+ &lt;td style="text-align: center">24/06/2026&lt;/td>
+ &lt;td style="text-align: center">25/06/2026&lt;/td>
+ &lt;td style="text-align: left">Amazon ElastiCache Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Deploy highly available RDS Multi-AZ database engines.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Apply zero trust network isolation to databases using Security Groups.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Integrate Redis caching to improve read performance.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 10</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.10-week10/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.10-week10/_index2/</guid><description>&lt;h3 id="week-10-objectives-monitoring-alerting--security-configuration">Week 10 Objectives: Monitoring, Alerting &amp;amp; Security Configuration&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>26/06/2026&lt;/strong> to &lt;strong>02/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Monitoring, Alerting &amp;amp; Security Configuration&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Study AWS KMS (Key Management Service). Create Customer Managed Keys to encrypt EBS volumes.&lt;/td>
+ &lt;td style="text-align: center">26/06/2026&lt;/td>
+ &lt;td style="text-align: center">27/06/2026&lt;/td>
+ &lt;td style="text-align: left">AWS KMS Developer Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Store Database credentials and integration secret tokens securely inside AWS Secrets Manager.&lt;/td>
+ &lt;td style="text-align: center">28/06/2026&lt;/td>
+ &lt;td style="text-align: center">28/06/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Secrets Manager Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Configure Amazon CloudWatch. Create custom Dashboards tracking RAM, EC2 CPU, and ALB Request Count.&lt;/td>
+ &lt;td style="text-align: center">29/06/2026&lt;/td>
+ &lt;td style="text-align: center">30/06/2026&lt;/td>
+ &lt;td style="text-align: left">CloudWatch Metrics Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Create CloudWatch Alarms and integrate with Amazon SNS to send email notifications when CPU &amp;gt; 80%.&lt;/td>
+ &lt;td style="text-align: center">01/07/2026&lt;/td>
+ &lt;td style="text-align: center">02/07/2026&lt;/td>
+ &lt;td style="text-align: left">CloudWatch Alarm with SNS&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Learn to encrypt data at rest and protect sensitive configuration.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Set up real-time monitoring dashboards.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Automate incident alerting on resource overload.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 11</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.11-week11/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.11-week11/_index2/</guid><description>&lt;h3 id="week-11-objectives-architecture-design--data-flow-mapping">Week 11 Objectives: Architecture Design &amp;amp; Data Flow Mapping&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>03/07/2026&lt;/strong> to &lt;strong>10/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Architecture Design &amp;amp; Data Flow Mapping&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Synthesize AWS services learned in Phase 1. Draft a highly available 3-tier architecture design for Pet Resort &amp;amp; Care.&lt;/td>
+ &lt;td style="text-align: center">03/07/2026&lt;/td>
+ &lt;td style="text-align: center">05/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Architecture Center&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Use Draw.io to draw the detailed system architecture diagram, showing subnets, Security Groups, and IAM Roles.&lt;/td>
+ &lt;td style="text-align: center">06/07/2026&lt;/td>
+ &lt;td style="text-align: center">07/07/2026&lt;/td>
+ &lt;td style="text-align: left">Draw.io AWS 3D Template&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Map out detailed data flow diagrams and connectivity rules (Frontend -&amp;gt; CloudFront -&amp;gt; ALB -&amp;gt; EC2 -&amp;gt; RDS/Redis).&lt;/td>
+ &lt;td style="text-align: center">08/07/2026&lt;/td>
+ &lt;td style="text-align: center">09/07/2026&lt;/td>
+ &lt;td style="text-align: left">Data Flow Design&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Complete the Project Proposal document, estimating monthly infrastructure costs via AWS Pricing Calculator.&lt;/td>
+ &lt;td style="text-align: center">10/07/2026&lt;/td>
+ &lt;td style="text-align: center">10/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Pricing Calculator&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Complete a professional system architecture diagram following AWS patterns.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Define clean network communication paths between subnets.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Estimate cloud spending budgets optimized for the project.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 12</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.12-week12/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.12-week12/_index2/</guid><description>&lt;h3 id="week-12-objectives-multi-tier-system-cloud-deployment">Week 12 Objectives: Multi-tier System Cloud Deployment&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>11/07/2026&lt;/strong> to &lt;strong>20/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>Multi-tier System Cloud Deployment&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Provision core network: Create VPC, Subnets, Internet/NAT Gateways, Route Tables, and Security Groups.&lt;/td>
+ &lt;td style="text-align: center">11/07/2026&lt;/td>
+ &lt;td style="text-align: center">12/07/2026&lt;/td>
+ &lt;td style="text-align: left">Infrastructure-as-Code Basics&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Deploy Frontend: Build ReactJS static bundle, host on S3, configure CloudFront CDN and attach WAF Web ACL.&lt;/td>
+ &lt;td style="text-align: center">13/07/2026&lt;/td>
+ &lt;td style="text-align: center">14/07/2026&lt;/td>
+ &lt;td style="text-align: left">S3 &amp;amp; CloudFront Deployment&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Provision RDS MySQL Multi-AZ and ElastiCache Redis cluster within Private Subnets.&lt;/td>
+ &lt;td style="text-align: center">15/07/2026&lt;/td>
+ &lt;td style="text-align: center">16/07/2026&lt;/td>
+ &lt;td style="text-align: left">RDS &amp;amp; Redis Provisioning&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Deploy Backend: Launch base EC2, configure Spring Boot application environment, integrate Database and Cache.&lt;/td>
+ &lt;td style="text-align: center">17/07/2026&lt;/td>
+ &lt;td style="text-align: center">17/07/2026&lt;/td>
+ &lt;td style="text-align: left">Spring Boot EC2 Setup&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">5&lt;/td>
+ &lt;td style="text-align: left">Create custom AMI from base EC2. Create Launch Template referencing the AMI and deploy Auto Scaling Group.&lt;/td>
+ &lt;td style="text-align: center">18/07/2026&lt;/td>
+ &lt;td style="text-align: center">19/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS EC2 AMI Creation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">6&lt;/td>
+ &lt;td style="text-align: left">Set up Application Load Balancer pointing to ASG. Adjust CORS configs and test end-to-end integration.&lt;/td>
+ &lt;td style="text-align: center">20/07/2026&lt;/td>
+ &lt;td style="text-align: center">20/07/2026&lt;/td>
+ &lt;td style="text-align: left">ALB Routing Setup&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Successfully host the secure multi-tier full-stack application on AWS Cloud.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Automate compute instances deployment using custom AMI and Launch Templates.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Integrate Frontend-Backend secure communication over HTTPS.&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Worklog - Week 13</title><link>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.13-week13/_index2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wuys-fan.github.io/phannhutquy.github.io/1-worklog/1.13-week13/_index2/</guid><description>&lt;h3 id="week-13-objectives-qa-load-testing-security-hardening--project-release">Week 13 Objectives: QA Load Testing, Security Hardening &amp;amp; Project Release&lt;/h3>
+&lt;ul>
+&lt;li>Duration: from &lt;strong>21/07/2026&lt;/strong> to &lt;strong>30/07/2026&lt;/strong>.&lt;/li>
+&lt;li>Core focus: Learning and accomplishing tasks regarding &lt;strong>QA Load Testing, Security Hardening &amp;amp; Project Release&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Work &amp;amp; Tasks Accomplished&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">End Date&lt;/th>
+ &lt;th style="text-align: left">References&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">1&lt;/td>
+ &lt;td style="text-align: left">Perform functional QA testing of booking and cart actions on the deployed Frontend.&lt;/td>
+ &lt;td style="text-align: center">21/07/2026&lt;/td>
+ &lt;td style="text-align: center">22/07/2026&lt;/td>
+ &lt;td style="text-align: left">Functional Testing Tools&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2&lt;/td>
+ &lt;td style="text-align: left">Write load testing scenarios using Artillery. Simulate 100 concurrent users hitting the backend API endpoints.&lt;/td>
+ &lt;td style="text-align: center">23/07/2026&lt;/td>
+ &lt;td style="text-align: center">24/07/2026&lt;/td>
+ &lt;td style="text-align: left">Artillery Load Testing Guide&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">3&lt;/td>
+ &lt;td style="text-align: left">Analyze CloudWatch metrics, resolve DB Connection Pool limits and 504 Gateway Timeout errors by tuning Spring Boot HikariCP pool and ALB timeouts.&lt;/td>
+ &lt;td style="text-align: center">25/07/2026&lt;/td>
+ &lt;td style="text-align: center">26/07/2026&lt;/td>
+ &lt;td style="text-align: left">CloudWatch Performance Tuning&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">4&lt;/td>
+ &lt;td style="text-align: left">Practice FinOps: Audit real cloud spend, scale down overprovisioned RDS/EC2 resources, and clean up orphan resources.&lt;/td>
+ &lt;td style="text-align: center">27/07/2026&lt;/td>
+ &lt;td style="text-align: center">28/07/2026&lt;/td>
+ &lt;td style="text-align: left">AWS Cost Optimization Practices&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">5&lt;/td>
+ &lt;td style="text-align: left">Complete and review the final 13-week internship report. Package code repositories and deliver the final release production build.&lt;/td>
+ &lt;td style="text-align: center">29/07/2026&lt;/td>
+ &lt;td style="text-align: center">30/07/2026&lt;/td>
+ &lt;td style="text-align: left">Project Final Release Docs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="key-accomplishments-of-the-week">Key Accomplishments of the Week:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Validate system scalability and load tolerance under load.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Optimize AWS billing (FinOps) to avoid unnecessary budget overflow.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Deliver a complete, highly structured final internship report.&lt;/strong>&lt;/li>
+&lt;/ul></description></item></channel></rss>
