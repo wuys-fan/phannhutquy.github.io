@@ -1,3 +1,18 @@
+---
+title: "Tự đánh giá"
+weight: 6
+chapter: false
+pre: " <b> 6. </b> "
+---
+
+Trong suốt 12 tuần thực tập tại **AWS First Cloud Journey** (từ tháng 04/2026 đến tháng 07/2026), tôi đã có cơ hội học hỏi, rèn luyện và nếm trải những thử thách thực tế khi áp dụng kiến thức điện toán đám mây vào việc triển khai hệ thống phần mềm.
+
+Tôi đã cùng nhóm 5 người tham gia phát triển dự án **Pet Resort & Care System** – một ứng dụng kết hợp thương mại điện tử và đặt lịch spa thú cưng. Ứng dụng được xây dựng bằng ReactJS và Spring Boot (Java), triển khai trên AWS theo mô hình Kiến trúc 3 lớp (3-Tier) với các dịch vụ cốt lõi như VPC, EC2, Application Load Balancer, Amazon RDS (Multi-AZ) và ElastiCache (Redis). Qua dự án này, tôi đã bước đầu làm quen với việc thiết kế hạ tầng mạng, cấu hình bảo mật cơ bản và nhận thức sâu sắc về việc tối ưu chi phí (FinOps) trên môi trường Cloud.
+
+Ngoài ra, tôi cũng đã tham gia **3 sự kiện kỹ thuật cộng đồng** về Kiến trúc Cloud, Voice AI và Định hướng nghề nghiệp. Những sự kiện này giúp tôi mở rộng tầm nhìn, hiểu rõ hơn về khoảng cách giữa kiến thức trường lớp và thực tế doanh nghiệp.
+
+Tự nhìn nhận lại bản thân, tôi biết hệ thống mình làm ra vẫn chỉ ở mức MVP (sản phẩm thử nghiệm), code chưa tối ưu và còn nhiều lỗ hổng. Để phản ánh một cách khách quan nhất quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+
 | STT | Tiêu chí                            | Mô tả                                                                                                                            | Tốt | Khá | Trung bình |
 | --- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --- | --- | ---------- |
 | 1   | **Kiến thức và kỹ năng chuyên môn** | Nắm vững kiến trúc hạ tầng và thành thạo cấu hình các dịch vụ cốt lõi trên AWS. Có hiểu biết và khả năng ứng dụng khá tốt một số dịch vụ nâng cao khác. | ✅  | ☐   | ☐          |
